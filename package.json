@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0"
+  },
+  "name": "repo-backend",
+  "version": "1.0.0",
+  "description": "Backend para el proyecto de programación web.",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MauricioMontes-UCA/webapp-backend.git"
+  },
+  "keywords": [
+    "books",
+    "auth",
+    "rating"
+  ],
+  "author": "Mauricio Montes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MauricioMontes-UCA/webapp-backend/issues"
+  },
+  "homepage": "https://github.com/MauricioMontes-UCA/webapp-backend#readme"
+}
