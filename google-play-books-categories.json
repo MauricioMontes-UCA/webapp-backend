@@ -1,0 +1,2658 @@
+{
+  "coll_1665": {
+    "section": "Books",
+    "html_structure": "rows",
+    "category": "Arts & entertainment"
+  },
+  "subj_Art___Humor.AH_Art": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Arts & entertainment",
+    "subcategory": "Art"
+  },
+  "subj_Art___Humor.AH_Drama": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Arts & entertainment",
+    "subcategory": "Drama"
+  },
+  "subj_Art___Humor.AH_Humor": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Arts & entertainment",
+    "subcategory": "Humor"
+  },
+  "subj_Art___Humor.AH_Music": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Arts & entertainment",
+    "subcategory": "Music"
+  },
+  "subj_Art___Humor.AH_Performing_Arts": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Arts & entertainment",
+    "subcategory": "Performing Arts"
+  },
+  "coll_1204": {
+    "section": "Books",
+    "html_structure": "rows",
+    "category": "Biographies & memoirs"
+  },
+  "subj_Biography___Autobiography.General": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Biographies & memoirs",
+    "subcategory": "General"
+  },
+  "subj_Biography___Autobiography.Adventurers___Explorers": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Biographies & memoirs",
+    "subcategory": "Adventurers & Explorers"
+  },
+  "subj_Biography___Autobiography.Business": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Biographies & memoirs",
+    "subcategory": "Business"
+  },
+  "subj_Biography___Autobiography.Composers___Musicians": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Biographies & memoirs",
+    "subcategory": "Composers & musicians"
+  },
+  "subj_Biography___Autobiography.Criminals___Outlaws": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Biographies & memoirs",
+    "subcategory": "Criminals & outlaws"
+  },
+  "subj_Biography___Autobiography.Cultural_Heritage": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Biographies & memoirs",
+    "subcategory": "Cultural heritage"
+  },
+  "subj_Biography___Autobiography.Entertainment___Performing_Arts": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Biographies & memoirs",
+    "subcategory": "Entertainment & performing arts"
+  },
+  "subj_Biography___Autobiography.Historical": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Biographies & memoirs",
+    "subcategory": "Historical"
+  },
+  "subj_Biography___Autobiography.Literary": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Biographies & memoirs",
+    "subcategory": "Literary"
+  },
+  "subj_Biography___Autobiography.Medical": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Biographies & memoirs",
+    "subcategory": "Medical"
+  },
+  "subj_Biography___Autobiography.Military": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Biographies & memoirs",
+    "subcategory": "Military"
+  },
+  "subj_Biography___Autobiography.Personal_Memoirs": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Biographies & memoirs",
+    "subcategory": "Personal Memoirs"
+  },
+  "subj_Biography___Autobiography.Political": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Biographies & memoirs",
+    "subcategory": "Political"
+  },
+  "subj_Biography___Autobiography.Presidents___Heads_of_State": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Biographies & memoirs",
+    "subcategory": "Presidents & heads of state"
+  },
+  "subj_Biography___Autobiography.Religious": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Biographies & memoirs",
+    "subcategory": "Religious"
+  },
+  "subj_Biography___Autobiography.Rich___Famous": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Biographies & memoirs",
+    "subcategory": "Rich & famous"
+  },
+  "subj_Biography___Autobiography.Royalty": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Biographies & memoirs",
+    "subcategory": "Royalty"
+  },
+  "subj_Biography___Autobiography.Science___Technology": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Biographies & memoirs",
+    "subcategory": "Science & technology"
+  },
+  "subj_Biography___Autobiography.Sports": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Biographies & memoirs",
+    "subcategory": "Sports"
+  },
+  "subj_Biography___Autobiography.Women": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Biographies & memoirs",
+    "subcategory": "Women"
+  },
+  "coll_1668": {
+    "section": "Books",
+    "html_structure": "chart",
+    "category": "Books in Spanish"
+  },
+  "coll_1205": {
+    "section": "Books",
+    "html_structure": "rows",
+    "category": "Business & investing"
+  },
+  "subj_Business___Economics.General": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "General"
+  },
+  "subj_Business___Economics.Accounting": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Accounting"
+  },
+  "subj_Business___Economics.Advertising___Promotion": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Advertising & promotion"
+  },
+  "subj_Business___Economics.Business_Communication": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Business Communication"
+  },
+  "subj_Business___Economics.Careers": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Careers"
+  },
+  "subj_Business___Economics.Decision-Making___Problem_Solving": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Decision-Making & problem solving"
+  },
+  "subj_Business___Economics.Development": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Development"
+  },
+  "subj_Business___Economics.E-Commerce": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "E-Commerce"
+  },
+  "subj_Business___Economics.Economic_History": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Economic History"
+  },
+  "subj_Business___Economics.Economics": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Economics"
+  },
+  "subj_Business___Economics.Entrepreneurship": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Entrepreneurship"
+  },
+  "subj_Business___Economics.Finance": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Finance"
+  },
+  "subj_Business___Economics.Human_Resources___Personnel_Management": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Human resources & personnel management"
+  },
+  "subj_Business___Economics.Industries": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Industries"
+  },
+  "subj_Business___Economics.International": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "International"
+  },
+  "subj_Business___Economics.Investments___Securities": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Investments & securities"
+  },
+  "subj_Business___Economics.Leadership": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Leadership"
+  },
+  "subj_Business___Economics.Management": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Management"
+  },
+  "subj_Business___Economics.Management_Science": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Management Science"
+  },
+  "subj_Business___Economics.Marketing": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Marketing"
+  },
+  "subj_Business___Economics.Motivational": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Motivational"
+  },
+  "subj_Business___Economics.Organizational_Behavior": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Organizational Behavior"
+  },
+  "subj_Business___Economics.Personal_Finance": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Personal Finance"
+  },
+  "subj_Business___Economics.Real_Estate": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Real Estate"
+  },
+  "subj_Business___Economics.Sales___Selling": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Sales & selling"
+  },
+  "subj_Business___Economics.Skills": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Skills"
+  },
+  "subj_Business___Economics.Small_Business": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Small Business"
+  },
+  "subj_Business___Economics.Strategic_Planning": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Strategic Planning"
+  },
+  "subj_Business___Economics.Time_Management": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Time Management"
+  },
+  "subj_Business___Economics.Workplace_Culture": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Workplace Culture"
+  },
+  "coll_1207": {
+    "section": "Books",
+    "html_structure": "chart",
+    "category": "Computers & technology"
+  },
+  "subj_Computers.General": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Computers & technology",
+    "subcategory": "General"
+  },
+  "subj_Computers.Desktop_Applications": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Computers & technology",
+    "subcategory": "Desktop Applications"
+  },
+  "subj_Computers.Electronic_Publishing": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Computers & technology",
+    "subcategory": "Electronic Publishing"
+  },
+  "subj_Computers.Enterprise_Applications": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Computers & technology",
+    "subcategory": "Enterprise Applications"
+  },
+  "subj_Computers.Hardware": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Computers & technology",
+    "subcategory": "Hardware"
+  },
+  "subj_Computers.Internet": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Computers & technology",
+    "subcategory": "Internet"
+  },
+  "subj_Computers.Networking": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Computers & technology",
+    "subcategory": "Networking"
+  },
+  "subj_Computers.Operating_Systems": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Computers & technology",
+    "subcategory": "Operating Systems"
+  },
+  "subj_Computers.Programming": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Computers & technology",
+    "subcategory": "Programming"
+  },
+  "subj_Computers.Programming_Languages": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Computers & technology",
+    "subcategory": "Programming Languages"
+  },
+  "subj_Computers.Security": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Computers & technology",
+    "subcategory": "Security"
+  },
+  "subj_Computers.Software_Development___Engineering": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Computers & technology",
+    "subcategory": "Software development & engineering"
+  },
+  "subj_Computers.Systems_Architecture": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Computers & technology",
+    "subcategory": "Systems Architecture"
+  },
+  "subj_Computers.Web": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Computers & technology",
+    "subcategory": "Web"
+  },
+  "coll_1208": {
+    "section": "Books",
+    "html_structure": "rows",
+    "category": "Cooking, food & wine"
+  },
+  "subj_Cooking.General": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Cooking, food & wine",
+    "subcategory": "General"
+  },
+  "subj_Cooking.Beverages": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Cooking, food & wine",
+    "subcategory": "Beverages"
+  },
+  "subj_Cooking.Courses___Dishes": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Cooking, food & wine",
+    "subcategory": "Courses & dishes"
+  },
+  "subj_Cooking.Health___Healing": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Cooking, food & wine",
+    "subcategory": "Health & healing"
+  },
+  "subj_Cooking.Methods": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Cooking, food & wine",
+    "subcategory": "Methods"
+  },
+  "subj_Cooking.Regional___Ethnic": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Cooking, food & wine",
+    "subcategory": "Regional & Ethnic"
+  },
+  "subj_Cooking.Specific_Ingredients": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Cooking, food & wine",
+    "subcategory": "Specific Ingredients"
+  },
+  "subj_Cooking.Tablesetting": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Cooking, food & wine",
+    "subcategory": "Tablesetting"
+  },
+  "subj_Cooking.Vegetarian___Vegan": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Cooking, food & wine",
+    "subcategory": "Vegetarian & Vegan"
+  },
+  "coll_1670": {
+    "section": "Books",
+    "html_structure": "chart",
+    "category": "Education"
+  },
+  "subj_Education.E_General": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Education",
+    "subcategory": "General"
+  },
+  "subj_Education.English_as_a_Second_Language": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Education",
+    "subcategory": "English as a second language"
+  },
+  "subj_Education.Higher": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Education",
+    "subcategory": "Higher"
+  },
+  "subj_Education.Teaching_Methods___Materials": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Education",
+    "subcategory": "Teaching methods & materials"
+  },
+  "coll_1261": {
+    "section": "Books",
+    "html_structure": "chart",
+    "category": "Engineering"
+  },
+  "subj_Technology___Engineering.General": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Engineering",
+    "subcategory": "General"
+  },
+  "subj_Technology___Engineering.Agriculture": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Engineering",
+    "subcategory": "Agriculture"
+  },
+  "subj_Technology___Engineering.Electronics": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Engineering",
+    "subcategory": "Electronics"
+  },
+  "subj_Technology___Engineering.Industrial_Technology": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Engineering",
+    "subcategory": "Industrial Technology"
+  },
+  "subj_Technology___Engineering.Military_Science": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Engineering",
+    "subcategory": "Military Science"
+  },
+  "subj_Technology___Engineering.Mobile___Wireless_Communications": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Engineering",
+    "subcategory": "Mobile & wireless communications"
+  },
+  "subj_Technology___Engineering.Nanotechnology___MEMS": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Engineering",
+    "subcategory": "Nanotechnology & MEMS"
+  },
+  "subj_Technology___Engineering.Remote_Sensing___Geographic_Information_Systems": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Engineering",
+    "subcategory": "Remote sensing & geographic information systems"
+  },
+  "coll_1200": {
+    "section": "Books",
+    "html_structure": "rows",
+    "category": "Fiction & literature"
+  },
+  "subj_Fiction.General": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "General"
+  },
+  "subj_Fiction.Action___Adventure": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Action & adventure"
+  },
+  "subj_Fiction.African_American": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "African American"
+  },
+  "subj_Fiction.Alternative_History": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Alternative History"
+  },
+  "subj_Fiction.Anthologies__multiple_authors_": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Anthologies (multiple authors)"
+  },
+  "subj_Fiction.Biographical": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Biographical"
+  },
+  "subj_Fiction.Christian": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Christian"
+  },
+  "subj_Fiction.Classics": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Classics"
+  },
+  "subj_Fiction.Coming_of_Age": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Coming of Age"
+  },
+  "subj_Fiction.Contemporary_Women": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Contemporary Women"
+  },
+  "subj_Fiction.Crime": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Crime"
+  },
+  "subj_Fiction.Cultural_Heritage": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Cultural Heritage"
+  },
+  "subj_Fiction.Erotica": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Erotica"
+  },
+  "subj_Fiction.Fairy_Tales__Folk_Tales__Legends___Mythology": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Fairy tales, folk tales, legends & mythology"
+  },
+  "subj_Fiction.Family_Life": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Family Life"
+  },
+  "subj_Fiction.Fantasy": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Fantasy"
+  },
+  "subj_Fiction.Gay": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Gay"
+  },
+  "subj_Fiction.Ghost": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Ghost"
+  },
+  "subj_Fiction.Historical": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Historical"
+  },
+  "subj_Fiction.Horror": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Horror"
+  },
+  "subj_Fiction.Humorous": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Humorous"
+  },
+  "subj_Fiction.Legal": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Legal"
+  },
+  "subj_Fiction.Lesbian": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Lesbian"
+  },
+  "subj_Fiction.Literary": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Literary"
+  },
+  "subj_Fiction.Media_Tie-In": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Media Tie-In"
+  },
+  "subj_Fiction.Medical": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Medical"
+  },
+  "subj_Fiction.Men_s_Adventure": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Men's Adventure"
+  },
+  "subj_Fiction.Mystery___Detective": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Mystery & Detective"
+  },
+  "subj_Fiction.Occult___Supernatural": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Occult & Supernatural"
+  },
+  "subj_Fiction.Political": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Political"
+  },
+  "subj_Fiction.Psychological": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Psychological"
+  },
+  "subj_Fiction.Religious": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Religious"
+  },
+  "subj_Fiction.Romance": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Romance"
+  },
+  "subj_Fiction.Sagas": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Sagas"
+  },
+  "subj_Fiction.Satire": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Satire"
+  },
+  "subj_Fiction.Science_Fiction": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Science Fiction"
+  },
+  "subj_Fiction.Sea_Stories": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Sea Stories"
+  },
+  "subj_Fiction.Short_Stories__single_author_": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Short stories (single author)"
+  },
+  "subj_Fiction.Sports": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Sports"
+  },
+  "subj_Fiction.Thrillers": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Thrillers"
+  },
+  "subj_Fiction.War___Military": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "War & Military"
+  },
+  "subj_Fiction.Westerns": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Westerns"
+  },
+  "coll_1605": {
+    "section": "Books",
+    "html_structure": "rows",
+    "category": "Health, mind & body"
+  },
+  "subj_Health__Mind___Body.HMB_General": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Health, mind & body",
+    "subcategory": "General"
+  },
+  "subj_Health__Mind___Body.Alternative_Therapies": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Health, mind & body",
+    "subcategory": "Alternative Therapies"
+  },
+  "subj_Health__Mind___Body.Astrology": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Health, mind & body",
+    "subcategory": "Astrology"
+  },
+  "subj_Health__Mind___Body.Beauty___Grooming": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Health, mind & body",
+    "subcategory": "Beauty & Grooming"
+  },
+  "subj_Health__Mind___Body.Creativity": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Health, mind & body",
+    "subcategory": "Creativity"
+  },
+  "subj_Health__Mind___Body.Death__Grief__Bereavement": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Health, mind & body",
+    "subcategory": "Death, grief, bereavement"
+  },
+  "subj_Health__Mind___Body.Exercise": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Health, mind & body",
+    "subcategory": "Exercise"
+  },
+  "subj_Health__Mind___Body.Healing": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Health, mind & body",
+    "subcategory": "Healing"
+  },
+  "subj_Health__Mind___Body.Healthy_Living": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Health, mind & body",
+    "subcategory": "Healthy Living"
+  },
+  "subj_Health__Mind___Body.Motivational___Inspirational": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Health, mind & body",
+    "subcategory": "Motivational & inspirational"
+  },
+  "subj_Health__Mind___Body.Personal_Growth": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Health, mind & body",
+    "subcategory": "Personal Growth"
+  },
+  "subj_Health__Mind___Body.Spirituality": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Health, mind & body",
+    "subcategory": "Spirituality"
+  },
+  "subj_Health__Mind___Body.Yoga": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Health, mind & body",
+    "subcategory": "Yoga"
+  },
+  "coll_1209": {
+    "section": "Books",
+    "html_structure": "rows",
+    "category": "History"
+  },
+  "subj_History.General": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "History",
+    "subcategory": "General"
+  },
+  "subj_History.Africa": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "History",
+    "subcategory": "Africa"
+  },
+  "subj_History.Americas__North__Central__South__West_Indies_": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "History",
+    "subcategory": "Americas (north, central, south, West Indies)"
+  },
+  "subj_History.Ancient": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "History",
+    "subcategory": "Ancient"
+  },
+  "subj_History.Asia": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "History",
+    "subcategory": "Asia"
+  },
+  "subj_History.Europe": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "History",
+    "subcategory": "Europe"
+  },
+  "subj_History.Holocaust": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "History",
+    "subcategory": "Holocaust"
+  },
+  "subj_History.Latin_America": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "History",
+    "subcategory": "Latin America"
+  },
+  "subj_History.Medieval": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "History",
+    "subcategory": "Medieval"
+  },
+  "subj_History.Middle_East": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "History",
+    "subcategory": "Middle East"
+  },
+  "subj_History.Military": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "History",
+    "subcategory": "Military"
+  },
+  "subj_History.Modern": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "History",
+    "subcategory": "Modern"
+  },
+  "subj_History.Native_American": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "History",
+    "subcategory": "Native American"
+  },
+  "subj_History.Revolutionary": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "History",
+    "subcategory": "Revolutionary"
+  },
+  "subj_History.Social_History": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "History",
+    "subcategory": "Social History"
+  },
+  "subj_History.United_States": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "History",
+    "subcategory": "United States"
+  },
+  "subj_History.World": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "History",
+    "subcategory": "World"
+  },
+  "coll_1211": {
+    "section": "Books",
+    "html_structure": "rows",
+    "category": "Home & garden"
+  },
+  "subj_House___Home.HH_General": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Home & garden",
+    "subcategory": "General"
+  },
+  "subj_House___Home.Crocheting": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Home & garden",
+    "subcategory": "Crocheting"
+  },
+  "subj_House___Home.Do-It-Yourself": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Home & garden",
+    "subcategory": "Do-It-Yourself"
+  },
+  "subj_House___Home.Fruit": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Home & garden",
+    "subcategory": "Fruit"
+  },
+  "subj_House___Home.Furniture": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Home & garden",
+    "subcategory": "Furniture"
+  },
+  "subj_House___Home.Knitting": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Home & garden",
+    "subcategory": "Knitting"
+  },
+  "subj_House___Home.Models": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Home & garden",
+    "subcategory": "Models"
+  },
+  "subj_House___Home.Quilts___Quilting": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Home & garden",
+    "subcategory": "Quilts & Quilting"
+  },
+  "subj_House___Home.Sustainable_Living": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Home & garden",
+    "subcategory": "Sustainable Living"
+  },
+  "subj_House___Home.Woodwork": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Home & garden",
+    "subcategory": "Woodwork"
+  },
+  "coll_1667": {
+    "section": "Books",
+    "html_structure": "chart",
+    "category": "Law"
+  },
+  "subj_Law.General": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Law",
+    "subcategory": "General"
+  },
+  "subj_Law.Criminal_Law": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Law",
+    "subcategory": "Criminal Law"
+  },
+  "subj_Law.Emigration___Immigration": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Law",
+    "subcategory": "Emigration & Immigration"
+  },
+  "coll_1669": {
+    "section": "Books",
+    "html_structure": "chart",
+    "category": "Medicine"
+  },
+  "subj_Medical.General": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Medicine",
+    "subcategory": "General"
+  },
+  "subj_Medical.Cardiology": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Medicine",
+    "subcategory": "Cardiology"
+  },
+  "subj_Medical.Caregiving": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Medicine",
+    "subcategory": "Caregiving"
+  },
+  "subj_Medical.Family___General_Practice": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Medicine",
+    "subcategory": "Family & general practice"
+  },
+  "subj_Medical.Neuroscience": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Medicine",
+    "subcategory": "Neuroscience"
+  },
+  "subj_Medical.Nursing": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Medicine",
+    "subcategory": "Nursing"
+  },
+  "subj_Medical.Practice_Management___Reimbursement": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Medicine",
+    "subcategory": "Practice management & reimbursement"
+  },
+  "subj_Medical.Preventive_Medicine": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Medicine",
+    "subcategory": "Preventive Medicine"
+  },
+  "coll_1615": {
+    "section": "Books",
+    "html_structure": "rows",
+    "category": "Mystery & thrillers"
+  },
+  "subj_Fiction.Mystery___Detective.General": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Mystery & thrillers",
+    "subcategory": "General"
+  },
+  "subj_Fiction.Mystery___Detective.Hard-Boiled": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Mystery & thrillers",
+    "subcategory": "Hard-Boiled"
+  },
+  "subj_Fiction.Mystery___Detective.Historical": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Mystery & thrillers",
+    "subcategory": "Historical"
+  },
+  "subj_Fiction.Mystery___Detective.Police_Procedural": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Mystery & thrillers",
+    "subcategory": "Police Procedural"
+  },
+  "subj_Fiction.Mystery___Detective.Suspense": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Mystery & thrillers",
+    "subcategory": "Suspense"
+  },
+  "subj_Fiction.Mystery___Detective.Traditional_British": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Mystery & thrillers",
+    "subcategory": "Traditional British"
+  },
+  "subj_Fiction.Mystery___Detective.True_Crime": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Mystery & thrillers",
+    "subcategory": "True Crime"
+  },
+  "subj_Fiction.Mystery___Detective.Women_Sleuths": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Mystery & thrillers",
+    "subcategory": "Women Sleuths"
+  },
+  "coll_1214": {
+    "section": "Books",
+    "html_structure": "rows",
+    "category": "Parenting & families"
+  },
+  "subj_Family___Relationships.General": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Parenting & families",
+    "subcategory": "General"
+  },
+  "subj_Family___Relationships.Abuse": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Parenting & families",
+    "subcategory": "Abuse"
+  },
+  "subj_Family___Relationships.Children_with_Special_Needs": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Parenting & families",
+    "subcategory": "Children with Special Needs"
+  },
+  "subj_Family___Relationships.Conflict_Resolution": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Parenting & families",
+    "subcategory": "Conflict Resolution"
+  },
+  "subj_Family___Relationships.Divorce___Separation": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Parenting & families",
+    "subcategory": "Divorce & Separation"
+  },
+  "subj_Family___Relationships.Family_Relationships": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Parenting & families",
+    "subcategory": "Family Relationships"
+  },
+  "subj_Family___Relationships.Interpersonal_Relations": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Parenting & families",
+    "subcategory": "Interpersonal Relations"
+  },
+  "subj_Family___Relationships.Life_Stages": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Parenting & families",
+    "subcategory": "Life Stages"
+  },
+  "subj_Family___Relationships.Love___Romance": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Parenting & families",
+    "subcategory": "Love & Romance"
+  },
+  "subj_Family___Relationships.Marriage": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Parenting & families",
+    "subcategory": "Marriage"
+  },
+  "subj_Family___Relationships.Parenting": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Parenting & families",
+    "subcategory": "Parenting"
+  },
+  "coll_1215": {
+    "section": "Books",
+    "html_structure": "rows",
+    "category": "Politics & current events"
+  },
+  "subj_Political_Science.General": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Politics & current events",
+    "subcategory": "General"
+  },
+  "subj_Political_Science.Essays": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Politics & current events",
+    "subcategory": "Essays"
+  },
+  "subj_Political_Science.History___Theory": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Politics & current events",
+    "subcategory": "History & Theory"
+  },
+  "subj_Political_Science.International_Relations": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Politics & current events",
+    "subcategory": "International Relations"
+  },
+  "subj_Political_Science.Political_Ideologies": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Politics & current events",
+    "subcategory": "Political Ideologies"
+  },
+  "subj_Political_Science.Political_Process": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Politics & current events",
+    "subcategory": "Political Process"
+  },
+  "subj_Political_Science.Public_Affairs___Administration": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Politics & current events",
+    "subcategory": "Public Affairs & Administration"
+  },
+  "subj_Political_Science.Public_Policy": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Politics & current events",
+    "subcategory": "Public Policy"
+  },
+  "coll_1217": {
+    "section": "Books",
+    "html_structure": "rows",
+    "category": "Religion & spirituality"
+  },
+  "subj_Religion.General": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Religion & spirituality",
+    "subcategory": "General"
+  },
+  "subj_Religion.Biblical_Commentary": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Religion & spirituality",
+    "subcategory": "Biblical Commentary"
+  },
+  "subj_Religion.Biblical_Criticism___Interpretation": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Religion & spirituality",
+    "subcategory": "Biblical Criticism & Interpretation"
+  },
+  "subj_Religion.Biblical_Reference": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Religion & spirituality",
+    "subcategory": "Biblical Reference"
+  },
+  "subj_Religion.Biblical_Studies": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Religion & spirituality",
+    "subcategory": "Biblical Studies"
+  },
+  "subj_Religion.Buddhism": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Religion & spirituality",
+    "subcategory": "Buddhism"
+  },
+  "subj_Religion.Christian_Church": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Religion & spirituality",
+    "subcategory": "Christian Church"
+  },
+  "subj_Religion.Christian_Education": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Religion & spirituality",
+    "subcategory": "Christian Education"
+  },
+  "subj_Religion.Christian_Life": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Religion & spirituality",
+    "subcategory": "Christian Life"
+  },
+  "subj_Religion.Christian_Ministry": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Religion & spirituality",
+    "subcategory": "Christian Ministry"
+  },
+  "subj_Religion.Christian_Rituals___Practice": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Religion & spirituality",
+    "subcategory": "Christian Rituals & Practice"
+  },
+  "subj_Religion.Christian_Theology": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Religion & spirituality",
+    "subcategory": "Christian Theology"
+  },
+  "subj_Religion.Christianity": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Religion & spirituality",
+    "subcategory": "Christianity"
+  },
+  "subj_Religion.Comparative_Religion": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Religion & spirituality",
+    "subcategory": "Comparative Religion"
+  },
+  "subj_Religion.Counseling": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Religion & spirituality",
+    "subcategory": "Counseling"
+  },
+  "subj_Religion.Eastern": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Religion & spirituality",
+    "subcategory": "Eastern"
+  },
+  "subj_Religion.Hinduism": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Religion & spirituality",
+    "subcategory": "Hinduism"
+  },
+  "subj_Religion.History": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Religion & spirituality",
+    "subcategory": "History"
+  },
+  "subj_Religion.Inspirational": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Religion & spirituality",
+    "subcategory": "Inspirational"
+  },
+  "subj_Religion.Judaism": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Religion & spirituality",
+    "subcategory": "Judaism"
+  },
+  "subj_Religion.Philosophy": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Religion & spirituality",
+    "subcategory": "Philosophy"
+  },
+  "subj_Religion.Prayer": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Religion & spirituality",
+    "subcategory": "Prayer"
+  },
+  "subj_Religion.Sikhism": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Religion & spirituality",
+    "subcategory": "Sikhism"
+  },
+  "subj_Religion.Spirituality": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Religion & spirituality",
+    "subcategory": "Spirituality"
+  },
+  "subj_Religion.Theology": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Religion & spirituality",
+    "subcategory": "Theology"
+  },
+  "coll_1218": {
+    "section": "Books",
+    "html_structure": "rows",
+    "category": "Romance"
+  },
+  "subj_Fiction.Romance.General": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Romance",
+    "subcategory": "General"
+  },
+  "subj_Fiction.Romance.Contemporary": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Romance",
+    "subcategory": "Contemporary"
+  },
+  "subj_Fiction.Romance.Fantasy": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Romance",
+    "subcategory": "Fantasy"
+  },
+  "subj_Fiction.Romance.Historical": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Romance",
+    "subcategory": "Historical"
+  },
+  "subj_Fiction.Romance.Paranormal": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Romance",
+    "subcategory": "Paranormal"
+  },
+  "subj_Fiction.Romance.Suspense": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Romance",
+    "subcategory": "Suspense"
+  },
+  "subj_Fiction.Romance.Time_Travel": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Romance",
+    "subcategory": "Time Travel"
+  },
+  "subj_Fiction.Romance.Western": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Romance",
+    "subcategory": "Western"
+  },
+  "coll_1671": {
+    "section": "Books",
+    "html_structure": "rows",
+    "category": "Science & math"
+  },
+  "coll_1604": {
+    "section": "Books",
+    "html_structure": "rows",
+    "category": "Science fiction & fantasy"
+  },
+  "subj_Science_Fiction___Fantasy.SFF_General": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Science fiction & fantasy",
+    "subcategory": "General"
+  },
+  "subj_Science_Fiction___Fantasy.Contemporary": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Science fiction & fantasy",
+    "subcategory": "Contemporary"
+  },
+  "subj_Science_Fiction___Fantasy.Epic": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Science fiction & fantasy",
+    "subcategory": "Epic"
+  },
+  "subj_Science_Fiction___Fantasy.SFF_Historical": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Science fiction & fantasy",
+    "subcategory": "Historical"
+  },
+  "subj_Science_Fiction___Fantasy.Military": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Science fiction & fantasy",
+    "subcategory": "Military"
+  },
+  "subj_Science_Fiction___Fantasy.Paranormal": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Science fiction & fantasy",
+    "subcategory": "Paranormal"
+  },
+  "subj_Science_Fiction___Fantasy.Space_Opera": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Science fiction & fantasy",
+    "subcategory": "Space Opera"
+  },
+  "coll_1222": {
+    "section": "Books",
+    "html_structure": "rows",
+    "category": "Sports"
+  },
+  "subj_Sports___Recreation.General": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Sports",
+    "subcategory": "General"
+  },
+  "subj_Sports___Recreation.Baseball": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Sports",
+    "subcategory": "Baseball"
+  },
+  "subj_Sports___Recreation.Basketball": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Sports",
+    "subcategory": "Basketball"
+  },
+  "subj_Sports___Recreation.Bodybuilding___Weight_Training": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Sports",
+    "subcategory": "Bodybuilding & weight training"
+  },
+  "subj_Sports___Recreation.Coaching": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Sports",
+    "subcategory": "Coaching"
+  },
+  "subj_Sports___Recreation.Essays": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Sports",
+    "subcategory": "Essays"
+  },
+  "subj_Sports___Recreation.Extreme_Sports": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Sports",
+    "subcategory": "Extreme Sports"
+  },
+  "subj_Sports___Recreation.Fishing": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Sports",
+    "subcategory": "Fishing"
+  },
+  "subj_Sports___Recreation.Football": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Sports",
+    "subcategory": "Football"
+  },
+  "subj_Sports___Recreation.Golf": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Sports",
+    "subcategory": "Golf"
+  },
+  "subj_Sports___Recreation.Hiking": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Sports",
+    "subcategory": "Hiking"
+  },
+  "subj_Sports___Recreation.History": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Sports",
+    "subcategory": "History"
+  },
+  "coll_1673": {
+    "section": "Books",
+    "html_structure": "rows",
+    "category": "Textbooks"
+  },
+  "coll_1224": {
+    "section": "Books",
+    "html_structure": "rows",
+    "category": "Travel"
+  },
+  "subj_Travel.General": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Travel",
+    "subcategory": "General"
+  },
+  "subj_Travel.Essays___Travelogues": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Travel",
+    "subcategory": "Essays & Travelogues"
+  },
+  "subj_Travel.Europe": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Travel",
+    "subcategory": "Europe"
+  },
+  "subj_Travel.Special_Interest": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Travel",
+    "subcategory": "Special Interest"
+  },
+  "subj_Travel.United_States": {
+    "section": "Books",
+    "html_structure": "list",
+    "category": "Travel",
+    "subcategory": "United States"
+  },
+  "coll_1672": {
+    "section": "Books",
+    "html_structure": "rows",
+    "category": "Young adult"
+  },
+  "audiobooks": {
+    "section": "Audiobooks",
+    "html_structure": "rows"
+  },
+  "audiobooks_coll_1665": {
+    "section": "Audiobooks",
+    "html_structure": "chart",
+    "category": "Arts & entertainment"
+  },
+  "audiobooks_subj_Arts___Entertainment.Celebrity_Bios": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Arts & entertainment",
+    "subcategory": "Celebrity Bios"
+  },
+  "audiobooks_subj_Arts___Entertainment.Humor": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Arts & entertainment",
+    "subcategory": "Humor"
+  },
+  "audiobooks_subj_Arts___Entertainment.TV___Film": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Arts & entertainment",
+    "subcategory": "TV & Film"
+  },
+  "audiobooks_coll_1204": {
+    "section": "Audiobooks",
+    "html_structure": "chart",
+    "category": "Biographies & memoirs"
+  },
+  "audiobooks_subj_Biographies___Memoirs.Artists__Writers____Musicians": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Biographies & memoirs",
+    "subcategory": "Artists, Writers, & Musicians"
+  },
+  "audiobooks_subj_Biographies___Memoirs.Business_Leaders": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Biographies & memoirs",
+    "subcategory": "Business Leaders"
+  },
+  "audiobooks_subj_Biographies___Memoirs.Celebrities": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Biographies & memoirs",
+    "subcategory": "Celebrities"
+  },
+  "audiobooks_subj_Biographies___Memoirs.Criminal": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Biographies & memoirs",
+    "subcategory": "Criminal"
+  },
+  "audiobooks_subj_Biographies___Memoirs.Personal_Memoirs": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Biographies & memoirs",
+    "subcategory": "Personal Memoirs"
+  },
+  "audiobooks_subj_Biographies___Memoirs.Political_Figures": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Biographies & memoirs",
+    "subcategory": "Political Figures"
+  },
+  "audiobooks_subj_Biographies___Memoirs.Religious_Figures": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Biographies & memoirs",
+    "subcategory": "Religious Figures"
+  },
+  "audiobooks_subj_Biographies___Memoirs.Science___Technology_Leaders": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Biographies & memoirs",
+    "subcategory": "Science & Technology Leaders"
+  },
+  "audiobooks_coll_1205": {
+    "section": "Audiobooks",
+    "html_structure": "chart",
+    "category": "Business & investing"
+  },
+  "audiobooks_subj_Business___Investing.Career_Skills": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Career Skills"
+  },
+  "audiobooks_subj_Business___Investing.Commerce___Economy": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Commerce & Economy"
+  },
+  "audiobooks_subj_Business___Investing.Leadership": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Leadership"
+  },
+  "audiobooks_subj_Business___Investing.Management": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Management"
+  },
+  "audiobooks_subj_Business___Investing.Marketing": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Marketing"
+  },
+  "audiobooks_subj_Business___Investing.Personal_Finance___Investing": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Personal Finance & Investing"
+  },
+  "audiobooks_subj_Business___Investing.Sales": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Business & investing",
+    "subcategory": "Sales"
+  },
+  "audiobooks_coll_1689": {
+    "section": "Audiobooks",
+    "html_structure": "rows",
+    "category": "Children's audiobooks"
+  },
+  "audiobooks_coll_1200": {
+    "section": "Audiobooks",
+    "html_structure": "chart",
+    "category": "Fiction & literature"
+  },
+  "audiobooks_subj_Fiction___Literature.African_American": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "African American"
+  },
+  "audiobooks_subj_Fiction___Literature.Classics": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Classics"
+  },
+  "audiobooks_subj_Fiction___Literature.Historical": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Historical"
+  },
+  "audiobooks_subj_Fiction___Literature.Horror": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Horror"
+  },
+  "audiobooks_subj_Fiction___Literature.Humor": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Humor"
+  },
+  "audiobooks_subj_Fiction___Literature.Literary": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Literary"
+  },
+  "audiobooks_subj_Fiction___Literature.Media_Tie-In": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Media Tie-In"
+  },
+  "audiobooks_subj_Fiction___Literature.Religion___Spirituality": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Religion & Spirituality"
+  },
+  "audiobooks_subj_Fiction___Literature.Short_Stories___Anthologies": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Short Stories & Anthologies"
+  },
+  "audiobooks_subj_Fiction___Literature.Western": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Fiction & literature",
+    "subcategory": "Western"
+  },
+  "audiobooks_coll_1605": {
+    "section": "Audiobooks",
+    "html_structure": "chart",
+    "category": "Health, mind & body"
+  },
+  "audiobooks_subj_Health__Mind___Body.Alternative_Therapies": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Health, mind & body",
+    "subcategory": "Alternative Therapies"
+  },
+  "audiobooks_subj_Health__Mind___Body.Astrology": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Health, mind & body",
+    "subcategory": "Astrology"
+  },
+  "audiobooks_subj_Health__Mind___Body.Beauty___Grooming": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Health, mind & body",
+    "subcategory": "Beauty & Grooming"
+  },
+  "audiobooks_subj_Health__Mind___Body.Creativity": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Health, mind & body",
+    "subcategory": "Creativity"
+  },
+  "audiobooks_subj_Health__Mind___Body.Exercise": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Health, mind & body",
+    "subcategory": "Exercise"
+  },
+  "audiobooks_subj_Health__Mind___Body.Healing": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Health, mind & body",
+    "subcategory": "Healing"
+  },
+  "audiobooks_subj_Health__Mind___Body.Healthy_Living": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Health, mind & body",
+    "subcategory": "Healthy Living"
+  },
+  "audiobooks_subj_Health__Mind___Body.Spirituality": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Health, mind & body",
+    "subcategory": "Spirituality"
+  },
+  "audiobooks_coll_1209": {
+    "section": "Audiobooks",
+    "html_structure": "chart",
+    "category": "History"
+  },
+  "audiobooks_subj_History.20th_Century": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "History",
+    "subcategory": "20th Century"
+  },
+  "audiobooks_subj_History.21st_Century": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "History",
+    "subcategory": "21st Century"
+  },
+  "audiobooks_subj_History.American": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "History",
+    "subcategory": "American"
+  },
+  "audiobooks_subj_History.Ancient": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "History",
+    "subcategory": "Ancient"
+  },
+  "audiobooks_subj_History.European": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "History",
+    "subcategory": "European"
+  },
+  "audiobooks_subj_History.Kids___Young_Adults": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "History",
+    "subcategory": "Kids & Young Adults"
+  },
+  "audiobooks_subj_History.Military": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "History",
+    "subcategory": "Military"
+  },
+  "audiobooks_subj_History.World": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "History",
+    "subcategory": "World"
+  },
+  "audiobooks_coll_1676": {
+    "section": "Audiobooks",
+    "html_structure": "chart",
+    "category": "Language instruction"
+  },
+  "audiobooks_subj_Language_Instruction.French": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Language instruction",
+    "subcategory": "French"
+  },
+  "audiobooks_subj_Language_Instruction.German": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Language instruction",
+    "subcategory": "German"
+  },
+  "audiobooks_subj_Language_Instruction.Italian": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Language instruction",
+    "subcategory": "Italian"
+  },
+  "audiobooks_subj_Language_Instruction.Spanish": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Language instruction",
+    "subcategory": "Spanish"
+  },
+  "audiobooks_coll_1615": {
+    "section": "Audiobooks",
+    "html_structure": "chart",
+    "category": "Mystery & thrillers"
+  },
+  "audiobooks_subj_Mystery___Thrillers.Cozy_Mysteries": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Mystery & thrillers",
+    "subcategory": "Cozy Mysteries"
+  },
+  "audiobooks_subj_Mystery___Thrillers.Espionage": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Mystery & thrillers",
+    "subcategory": "Espionage"
+  },
+  "audiobooks_subj_Mystery___Thrillers.Historical": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Mystery & thrillers",
+    "subcategory": "Historical"
+  },
+  "audiobooks_subj_Mystery___Thrillers.International_Mystery___Crime": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Mystery & thrillers",
+    "subcategory": "International Mystery & Crime"
+  },
+  "audiobooks_subj_Mystery___Thrillers.Legal_Thrillers": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Mystery & thrillers",
+    "subcategory": "Legal Thrillers"
+  },
+  "audiobooks_subj_Mystery___Thrillers.Medical_Thrillers": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Mystery & thrillers",
+    "subcategory": "Medical Thrillers"
+  },
+  "audiobooks_subj_Mystery___Thrillers.Military": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Mystery & thrillers",
+    "subcategory": "Military"
+  },
+  "audiobooks_subj_Mystery___Thrillers.Noir": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Mystery & thrillers",
+    "subcategory": "Noir"
+  },
+  "audiobooks_subj_Mystery___Thrillers.Police_Procedural": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Mystery & thrillers",
+    "subcategory": "Police Procedural"
+  },
+  "audiobooks_subj_Mystery___Thrillers.Political": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Mystery & thrillers",
+    "subcategory": "Political"
+  },
+  "audiobooks_subj_Mystery___Thrillers.Psychological": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Mystery & thrillers",
+    "subcategory": "Psychological"
+  },
+  "audiobooks_subj_Mystery___Thrillers.Suspense": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Mystery & thrillers",
+    "subcategory": "Suspense"
+  },
+  "audiobooks_subj_Mystery___Thrillers.True_Crime": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Mystery & thrillers",
+    "subcategory": "True Crime"
+  },
+  "audiobooks_coll_1217": {
+    "section": "Audiobooks",
+    "html_structure": "chart",
+    "category": "Religion & spirituality"
+  },
+  "audiobooks_subj_Religion___Spirituality.Buddhism___Eastern_Religions": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Religion & spirituality",
+    "subcategory": "Buddhism & Eastern Religions"
+  },
+  "audiobooks_subj_Religion___Spirituality.Christianity": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Religion & spirituality",
+    "subcategory": "Christianity"
+  },
+  "audiobooks_subj_Religion___Spirituality.Islam": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Religion & spirituality",
+    "subcategory": "Islam"
+  },
+  "audiobooks_subj_Religion___Spirituality.Judaism": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Religion & spirituality",
+    "subcategory": "Judaism"
+  },
+  "audiobooks_subj_Religion___Spirituality.Religious_Thought": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Religion & spirituality",
+    "subcategory": "Religious Thought"
+  },
+  "audiobooks_subj_Religion___Spirituality.Sermons___Ministries": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Religion & spirituality",
+    "subcategory": "Sermons & Ministries"
+  },
+  "audiobooks_coll_1716": {
+    "section": "Audiobooks",
+    "html_structure": "chart",
+    "category": "Romance"
+  },
+  "audiobooks_subj_Romance_US.Christian_Romance": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Romance",
+    "subcategory": "Christian Romance"
+  },
+  "audiobooks_subj_Romance_US.Contemporary": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Romance",
+    "subcategory": "Contemporary"
+  },
+  "audiobooks_subj_Romance_US.Erotica": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Romance",
+    "subcategory": "Erotica"
+  },
+  "audiobooks_subj_Romance_US.Fantasy": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Romance",
+    "subcategory": "Fantasy"
+  },
+  "audiobooks_subj_Romance_US.Historical": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Romance",
+    "subcategory": "Historical"
+  },
+  "audiobooks_subj_Romance_US.LGBT": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Romance",
+    "subcategory": "LGBT"
+  },
+  "audiobooks_subj_Romance_US.Paranormal": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Romance",
+    "subcategory": "Paranormal"
+  },
+  "audiobooks_subj_Romance_US.Regency": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Romance",
+    "subcategory": "Regency"
+  },
+  "audiobooks_subj_Romance_US.Romantic_Comedy": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Romance",
+    "subcategory": "Romantic Comedy"
+  },
+  "audiobooks_subj_Romance_US.Science_Fiction___Fantasy": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Romance",
+    "subcategory": "Science Fiction & Fantasy"
+  },
+  "audiobooks_subj_Romance_US.Sports": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Romance",
+    "subcategory": "Sports"
+  },
+  "audiobooks_subj_Romance_US.Suspense": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Romance",
+    "subcategory": "Suspense"
+  },
+  "audiobooks_subj_Romance_US.Western": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Romance",
+    "subcategory": "Western"
+  },
+  "audiobooks_subj_Romance_US.Young_Adult": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Romance",
+    "subcategory": "Young Adult"
+  },
+  "audiobooks_coll_1219": {
+    "section": "Audiobooks",
+    "html_structure": "chart",
+    "category": "Science & technology"
+  },
+  "audiobooks_subj_Science___Technology.Astronomy": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Science & technology",
+    "subcategory": "Astronomy"
+  },
+  "audiobooks_subj_Science___Technology.Biology": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Science & technology",
+    "subcategory": "Biology"
+  },
+  "audiobooks_subj_Science___Technology.Environment": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Science & technology",
+    "subcategory": "Environment"
+  },
+  "audiobooks_subj_Science___Technology.Physics": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Science & technology",
+    "subcategory": "Physics"
+  },
+  "audiobooks_coll_1604": {
+    "section": "Audiobooks",
+    "html_structure": "chart",
+    "category": "Science fiction & fantasy"
+  },
+  "audiobooks_subj_Science_Fiction___Fantasy.Alternate_History": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Science fiction & fantasy",
+    "subcategory": "Alternate History"
+  },
+  "audiobooks_subj_Science_Fiction___Fantasy.Contemporary": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Science fiction & fantasy",
+    "subcategory": "Contemporary"
+  },
+  "audiobooks_subj_Science_Fiction___Fantasy.Dark_Fantasy": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Science fiction & fantasy",
+    "subcategory": "Dark Fantasy"
+  },
+  "audiobooks_subj_Science_Fiction___Fantasy.Fantasy__Epic": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Science fiction & fantasy",
+    "subcategory": "Fantasy: Epic"
+  },
+  "audiobooks_subj_Science_Fiction___Fantasy.Military_Sci-Fi": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Science fiction & fantasy",
+    "subcategory": "Military Sci-Fi"
+  },
+  "audiobooks_subj_Science_Fiction___Fantasy.Paranormal": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Science fiction & fantasy",
+    "subcategory": "Paranormal"
+  },
+  "audiobooks_subj_Science_Fiction___Fantasy.Post_Apocalyptic": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Science fiction & fantasy",
+    "subcategory": "Post Apocalyptic"
+  },
+  "audiobooks_subj_Science_Fiction___Fantasy.Short_Stories___Anthologies": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Science fiction & fantasy",
+    "subcategory": "Short Stories & Anthologies"
+  },
+  "audiobooks_subj_Science_Fiction___Fantasy.Space_Opera": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Science fiction & fantasy",
+    "subcategory": "Space Opera"
+  },
+  "audiobooks_subj_Science_Fiction___Fantasy.Steampunk": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Science fiction & fantasy",
+    "subcategory": "Steampunk"
+  },
+  "audiobooks_subj_Science_Fiction___Fantasy.Superheroes": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Science fiction & fantasy",
+    "subcategory": "Superheroes"
+  },
+  "audiobooks_subj_Science_Fiction___Fantasy.Time_Travel": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Science fiction & fantasy",
+    "subcategory": "Time Travel"
+  },
+  "audiobooks_coll_1545": {
+    "section": "Audiobooks",
+    "html_structure": "chart",
+    "category": "Self-help"
+  },
+  "audiobooks_subj_Self-Help.Communication_Skills": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Self-help",
+    "subcategory": "Communication Skills"
+  },
+  "audiobooks_subj_Self-Help.How-To": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Self-help",
+    "subcategory": "How-To"
+  },
+  "audiobooks_subj_Self-Help.Hypnosis": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Self-help",
+    "subcategory": "Hypnosis"
+  },
+  "audiobooks_subj_Self-Help.Meditation": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Self-help",
+    "subcategory": "Meditation"
+  },
+  "audiobooks_subj_Self-Help.Motivation___Inspiration": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Self-help",
+    "subcategory": "Motivation & Inspiration"
+  },
+  "audiobooks_subj_Self-Help.Parenting": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Self-help",
+    "subcategory": "Parenting"
+  },
+  "audiobooks_subj_Self-Help.Personal_Finance": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Self-help",
+    "subcategory": "Personal_Finance"
+  },
+  "audiobooks_subj_Self-Help.Relationships": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Self-help",
+    "subcategory": "Relationships"
+  },
+  "audiobooks_subj_Self-Help.Sexuality": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Self-help",
+    "subcategory": "Sexuality"
+  },
+  "audiobooks_coll_1222": {
+    "section": "Audiobooks",
+    "html_structure": "chart",
+    "category": "Sports"
+  },
+  "audiobooks_subj_Sports.Baseball": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Sports",
+    "subcategory": "Baseball"
+  },
+  "audiobooks_subj_Sports.Basketball": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Sports",
+    "subcategory": "Basketball"
+  },
+  "audiobooks_subj_Sports.Football": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Sports",
+    "subcategory": "Football"
+  },
+  "audiobooks_subj_Sports.Golf": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Sports",
+    "subcategory": "Golf"
+  },
+  "audiobooks_coll_1224": {
+    "section": "Audiobooks",
+    "html_structure": "chart",
+    "category": "Travel"
+  },
+  "audiobooks_subj_Travel.Adventure___Exploration": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Travel",
+    "subcategory": "Adventure & Exploration"
+  },
+  "audiobooks_subj_Travel.Essays___Travelogues": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Travel",
+    "subcategory": "Essays & Travelogues"
+  },
+  "audiobooks_subj_Travel.Guided_Tours": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Travel",
+    "subcategory": "Guided Tours"
+  },
+  "audiobooks_coll_1672": {
+    "section": "Audiobooks",
+    "html_structure": "chart",
+    "category": "Young adult"
+  },
+  "audiobooks_subj_Young_Adult.Family___Relationships": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Young adult",
+    "subcategory": "Family & Relationships"
+  },
+  "audiobooks_subj_Young_Adult.Health___Sports": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Young adult",
+    "subcategory": "Health & Sports"
+  },
+  "audiobooks_subj_Young_Adult.History___Historical_Fiction": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Young adult",
+    "subcategory": "History & Historical Fiction"
+  },
+  "audiobooks_subj_Young_Adult.Mystery___Thrillers": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Young adult",
+    "subcategory": "Mystery & Thrillers"
+  },
+  "audiobooks_subj_Young_Adult.Myths___Legends": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Young adult",
+    "subcategory": "Myths & Legends"
+  },
+  "audiobooks_subj_Young_Adult.Religion___Spirituality": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Young adult",
+    "subcategory": "Religion & Spirituality"
+  },
+  "audiobooks_subj_Young_Adult.Romance___Friendship": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Young adult",
+    "subcategory": "Romance & Friendship"
+  },
+  "audiobooks_subj_Young_Adult.Science_Fiction___Fantasy": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Young adult",
+    "subcategory": "Science Fiction & Fantasy"
+  },
+  "audiobooks_subj_Young_Adult.Social_Issues": {
+    "section": "Audiobooks",
+    "html_structure": "list",
+    "category": "Young adult",
+    "subcategory": "Social Issues"
+  },
+  "coll_1401": {
+    "section": "Comics",
+    "html_structure": "rows"
+  },
+  "subj_Comics___Graphic_Novels.General": {
+    "section": "Comics",
+    "html_structure": "list",
+    "category": "General"
+  },
+  "subj_Comics___Graphic_Novels.Crime___Mystery": {
+    "section": "Comics",
+    "html_structure": "list",
+    "category": "Crime & Mystery"
+  },
+  "subj_Comics___Graphic_Novels.Fantasy": {
+    "section": "Comics",
+    "html_structure": "list",
+    "category": "Fantasy"
+  },
+  "subj_Comics___Graphic_Novels.Horror": {
+    "section": "Comics",
+    "html_structure": "list",
+    "category": "Horror"
+  },
+  "subj_Comics___Graphic_Novels.Literary": {
+    "section": "Comics",
+    "html_structure": "list",
+    "category": "Literary"
+  },
+  "subj_Comics___Graphic_Novels.Manga": {
+    "section": "Comics",
+    "html_structure": "list",
+    "category": "Manga"
+  },
+  "subj_Comics___Graphic_Novels.Media_Tie-In": {
+    "section": "Comics",
+    "html_structure": "list",
+    "category": "Media Tie-In"
+  },
+  "subj_Comics___Graphic_Novels.Science_Fiction": {
+    "section": "Comics",
+    "html_structure": "list",
+    "category": "Science Fiction"
+  },
+  "subj_Comics___Graphic_Novels.Superheroes": {
+    "section": "Comics",
+    "html_structure": "list",
+    "category": "Science Fiction"
+  },
+  "coll_1689": {
+    "section": "Children's books",
+    "html_structure": "rows"
+  },
+  "coll_1690": {
+    "section": "Children's books",
+    "html_structure": "chart",
+    "category": "Action & adventure"
+  },
+  "coll_1691": {
+    "section": "Children's books",
+    "html_structure": "chart",
+    "category": "Animals & nature"
+  },
+  "coll_1693": {
+    "section": "Children's books",
+    "html_structure": "chart",
+    "category": "Comics"
+  },
+  "coll_1692": {
+    "section": "Children's books",
+    "html_structure": "chart",
+    "category": "Early learning"
+  },
+  "coll_1694": {
+    "section": "Children's books",
+    "html_structure": "chart",
+    "category": "Education"
+  },
+  "coll_1696": {
+    "section": "Children's books",
+    "html_structure": "chart",
+    "category": "Fiction"
+  },
+  "coll_1698": {
+    "section": "Children's books",
+    "html_structure": "chart",
+    "category": "Growing up"
+  },
+  "coll_1699": {
+    "section": "Children's books",
+    "html_structure": "chart",
+    "category": "History & biographies"
+  },
+  "coll_1702": {
+    "section": "Children's books",
+    "html_structure": "chart",
+    "category": "Mysteries"
+  },
+  "coll_1704": {
+    "section": "Children's books",
+    "html_structure": "chart",
+    "category": "Science fiction & fantasy"
+  },
+  "coll_1705": {
+    "section": "Children's books",
+    "html_structure": "chart",
+    "category": "Sports"
+  }
+}

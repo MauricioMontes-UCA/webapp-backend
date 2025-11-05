@@ -1,5 +1,6 @@
 import axios from "axios";
 import dotenv from "dotenv"
+import { filterBookInfo } from "../utils/books.utils.js";
 
 dotenv.config()
 const API_KEY = process.env.API_KEY
@@ -11,14 +12,16 @@ class ErrorAPI extends Error {
     }
 }
 
-export default class BooksService {
-    static async getBookById(id) {
+class BooksService {
+    async getBookById(id) {
         try {
+            // Intenta contactarse con la API de google
             const response = await axios.get(
-                `https://www.googleapis.com/books/v1/volumes?q=${id}&key=${API_KEY}`
+                `https://www.googleapis.com/books/v1/volumes/${id}?key=${API_KEY}`,
             );
 
-            return response.data.items[0];
+            // Filtra la información
+            return filterBookInfo(response.data);
         } 
         catch (err) {
             // Hay un error al llamar a la API...
@@ -44,4 +47,42 @@ export default class BooksService {
             }
         }
     }
+
+    // Dados los parámetros, el resultado será una lista de libros, cada libro con los datos
+    // que se encuentran en books.utils.js
+    async getBooksByParams(query) {
+        try {
+            const response = await axios.get(
+                `https://www.googleapis.com/books/v1/volumes?q=${query}&key=${API_KEY}`   
+            )
+
+            // A cada item del resultado, a cada libro, se le filtra la información
+            const books = response.data.items.map((book) => filterBookInfo(book))
+
+            return books;
+        }
+        catch (err) {
+            if (err.response) {
+                const status = err.response.status;
+                const axiosErrorMessage = err.response.data?.error?.message || "Error desconocido de la API";
+    
+                if (status === 404) {
+                    throw new ErrorAPI(`No se encontraron libros`, status);
+                }
+
+                // Es problema de la API de Google Books, y en este caso, nuestra también para el usuario
+                const errorMessage = `Error de la API de Google Books.\nCódigo: ${status}.\nMensaje: ${axiosErrorMessage}`;
+                throw new ErrorAPI(errorMessage, status);
+            }
+            else if (err.request) {
+                throw new ErrorAPI('No se recibió respuesta de la API, pruebe la conexión', 503);
+            }
+            else {
+                console.error("Error en la configuración de la solicitud", err.message)
+                throw new ErrorAPI("Error interno al preparar la solicitud", 500)
+            }
+        }
+    }
 }
+
+export const booksService = new BooksService();
