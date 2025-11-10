@@ -50,12 +50,15 @@ class BooksService {
 
     // Dados los parámetros, el resultado será una lista de 40 libros, cada libro con los datos
     // que se encuentran en books.utils.js.
-    // Son 40 libros porque la idea es que este servicio es para búsqueda, tanto sencilla como avanzada.
+    // Son 20 libros porque la idea es que este servicio es para búsqueda, tanto sencilla como avanzada.
+
+    // IMPORTANTE: Al parecer, si la búsqueda es demasiado sencilla, a google le importa un comino maxResults y siempre
+    // devolverá 10 objetos.
 
     async getBooksByQuery(query) {
         try {
             const response = await axios.get(
-                `https://www.googleapis.com/books/v1/volumes?q=${query}&key=${API_KEY}&maxResults=40`   
+                `https://www.googleapis.com/books/v1/volumes?q=${query}&key=${API_KEY}&maxResults=20`
             )
 
             // A cada item del resultado, a cada libro, se le filtra la información
@@ -85,45 +88,11 @@ class BooksService {
         }
     }
 
-    // Este servicio en general, por estandarización, debería recibir las categorías generales del BISAC, pues solo puede buscar
-    // eso. Como solo son para la página catálogo, son 20 libros.
-    async getBookBySubject(subject) {
-        try {
-            const response = await axios.get(
-                `https://www.googleapis.com/books/v1/volumes?q=intitle:+subject:${subject}&key=${API_KEY}&maxResults=20`
-            )
-
-            const books = response.data.items.map((book) => filterBookInfo(book))
-            return books;
-        } 
-        catch (err) {
-            if (err.response) {
-                const status = err.response.status;
-                const axiosErrorMessage = err.response.data?.error?.message || "Error desconocido de la API";
-
-                if (status === 404) {
-                    throw new ErrorAPI(errorMessage, status);
-                }
-
-                const errorMessage = `Error de la API de Google Books. \nCódigo: ${status}.\nMensaje: ${axiosErrorMessage}`;
-                throw new ErrorAPI(errorMessage, status);
-            }
-            else if (err.request) {
-                throw new ErrorAPI("No se recibió respuesta de la API, pruebe la conexión", 503);
-            }
-            else {
-                console.error("Error en la configuración de la solicitud", err.message);
-                throw new ErrorAPI("Error interno al preparar la solicitud", 500);
-            }
-        }
-    }
-
-
     // Obtiene los 10 best sellers más recientes
     async getRecentBooks( ) {
         try {
             const response = await axios.get(
-                `https://www.googleapis.com/books/v1/volumes?q=bestseller&orderBy=newest&key=${API_KEY}&maxREsults=10`
+                `https://www.googleapis.com/books/v1/volumes?q=bestseller&orderBy=newest&key=${API_KEY}&maxResults=10`
             )
 
             const books = response.data.items.map((book) => filterBookInfo(book))

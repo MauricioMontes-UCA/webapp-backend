@@ -5,4 +5,7 @@ export const booksRouter = Router()
 
 // booksRouter.get("/search", getBookByParams)
 
-booksRouter.get("/:id", booksController.searchBookById)
+booksRouter.get("/", booksController.getBooks);
+booksRouter.post("/search", booksController.searchBooksAdvanced);
+booksRouter.get("/search/:query", booksController.searchBooks);
+booksRouter.get("/:id", booksController.searchBookInfo);
