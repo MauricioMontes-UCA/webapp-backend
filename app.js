@@ -1,39 +1,18 @@
-const express = require("express")
+import express from "express"
+import dotenv from "dotenv"
+import cors from "cors"
+import router from "./src/router.js"
 
-const app = express();
-app.use(express.json());
+dotenv.config()
 
-const PORT = 3000;
+const PORT = process.env.PORT
+
+const app = express()
+
+app.use(cors())
+app.use(express.json())
+app.use("/api", router)
 
 app.listen(PORT, () => {
-    console.log("Server listening on PORT:", PORT)
-})
-
-function longerWord(str) {
-    let words = str.split(" ")
-
-    let palabra = ""
-    let length = 0;
-
-    words.forEach(word => {
-        if (word.length > length) {
-            palabra = word
-            length = word.length
-        }
-    });
-
-    return palabra
-}
-
-app.get('/endpoint/:string', (req, res) => {
-    const { string } = req.params;
-    const { status } = req.query;
-
-    const response = {
-        moreText: longerWord(string),
-        status: (status !== undefined),
-        allCapital: string.toUpperCase()
-    }
-
-    res.send(response)
+    console.log(`Listening on PORT ${PORT}`)
 })
