@@ -1,4 +1,3 @@
-import { query } from "mssql";
 import { booksService } from "../services/books.services.js";
 
 class BooksController {
@@ -18,7 +17,7 @@ class BooksController {
         }
         this.cache.set(query, books)
 
-        setTimeout(() => cache.delete(query), tenMinutesInMiliseconds);
+        setTimeout(() => this.cache.delete(query), tenMinutesInMiliseconds);
 
         return books;
     }

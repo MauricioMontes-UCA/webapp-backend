@@ -3,8 +3,6 @@ import { booksController } from "../controllers/books.controller.js"
 
 export const booksRouter = Router()
 
-// booksRouter.get("/search", getBookByParams)
-
 booksRouter.get("/", booksController.getBooks);
 booksRouter.post("/search", booksController.searchBooksAdvanced);
 booksRouter.get("/search/:query", booksController.searchBooks);
