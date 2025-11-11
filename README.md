@@ -37,9 +37,9 @@ Este comando instala las dependencias que se encuentran en el `package.json`. Lu
 
 Los libros obtenidos por esta API obtienen información que nos puede ser relevante para el sitio web. La estructura de cada libro es la siguiente:
 
-```json
+```js
 {
-    id: String,
+    id: String, // Es muy importante trabajar con estas IDs para identificar los libros después
     title: String,
     authors: String[ ], // Pueden ser muchos autores
     publisher: String,
@@ -47,23 +47,24 @@ Los libros obtenidos por esta API obtienen información que nos puede ser releva
     description: String, // Mucho texto
 
     // Es una lista de todos los identificadores estándar del libro
-    industryIdentifiers: Object {type: String, identifier: String} [ ],
+    industryIdentifiers: Object {
+		type: String,
+		identifier: String
+	} [ ],
 
     pageCount: Int,
 
     // Estos pueden ser los géneros del libro o algo así.
     // Son categorías de un estándar llamado BISAC.
-    categories: String[ ], 
+    "categories": "String[ ], 
     maturityRating: "NOT_MATURE" || "MATURE",
     imageLinks: Object { 
         smallThumbnail: String // Es un URL de la portada
         thumbnail: String // Es otro URL de la portada
-        ...
+        // ...
         // Puede tener más elementos, no sé porqué lo quisieron guardar como objeto
     }
-
     language: String // Idioma del libro
-
 }
 ```
 
@@ -73,18 +74,18 @@ Actualmente hay cuatro endpoints para el servicio de libros:
 
 - `GET: /api/books/` es el endpoint a llamar para la página de catálogos. Devuelve un objeto `{ lists: [] }`, donde cada elemento de la lista es un objeto que contiene el género de la lista de libros:
 
-```json
+```js
 {   
     lists: [
         {
             subject: "recent",
-            items: Book [ ]
+            items: Book[ ]
         },
         {
             subject: "bestseller",
-            items: Book [ ]
+            items: Book[ ]
         }
-        ...
+        // ...
     ]
 }
 ```
@@ -99,14 +100,14 @@ const subjects = ['recent', 'bestseller', 'fiction', 'mystery', 'romance', 'scie
 
 - `POST: /api/books/search/` es el endpoint para la página de búsqueda avanzada. También devuelve una lista de 10 libros, porque a la API de Google Books le encanta no hacer lo que le pido. En fin, como es un POST, el request tiene que tener un `body`, que debe tener la siguiente estructura:
 
-```json
+```js
 { 
-	"keywords": String,
-	"title": String,
-	"author": String,
-	"publisher" : String,
-	"subject": String, // preferiblemente una categoría del BISAC
-	"isbn": String // Código ISBN estándar para libros
+	keywords: "String",
+	title: "String",
+	author: "String",
+	publisher: "String",
+	subject: "String", // preferiblemente una categoría del BISAC
+	isbn: "String" // Código ISBN estándar para libros
 }
 ```
 
