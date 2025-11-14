@@ -4,7 +4,8 @@
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
-    "mssql": "^12.1.0"
+    "mssql": "^12.1.0",
+    "sequelize": "^6.37.7"
   },
   "name": "repo-backend",
   "version": "1.0.0",
