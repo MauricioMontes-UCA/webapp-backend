@@ -1,4 +1,4 @@
-import { sequelize } from "../repositories/db/connection";
+import { sequelize } from "../repositories/db/connection.js";
 import { DataTypes } from "sequelize";
 
 // Es un mapeo uno a uno de la tabla de usuarios
@@ -27,7 +27,7 @@ export const User = sequelize.define(
         },
         created_at: {
             type: DataTypes.DATE,
-            defaultValue: DataTypes.NOW
+            //defaultValue: DataTypes.NOW
         },
         first_name: {
             type: DataTypes.STRING(100),
