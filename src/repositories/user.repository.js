@@ -8,8 +8,13 @@ class UserRepository {
         return user;
     };
 
-    async findUserByEmail(email) {
+    async selectUserByEmail(email) {
         const user = await User.findOne({ where: {email} });
+        return user;
+    }
+
+    async selectUserById(id) {
+        const user = await User.findOne({ where: {id} });
         return user;
     }
 

@@ -22,6 +22,25 @@ class UserController {
             });
         }
     }
+
+    // se tiene que trabajar con un POST, y también un parámetro id
+    // la ruta probablemente sea del estilo POST users/:id
+    async updateUser(req, res) {
+        try {
+            const userId = req.params.id
+            const dbResponse = await userService.updateUser(userId, req.body);
+
+            console.info(dbResponse)
+
+            
+
+
+
+
+        } catch (err) {
+            
+        }
+    }
 }
 
 export const userController = new UserController();
