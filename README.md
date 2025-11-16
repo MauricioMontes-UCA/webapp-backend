@@ -66,7 +66,7 @@ Los libros obtenidos por esta API obtienen información que nos puede ser releva
 
     // Estos pueden ser los géneros del libro o algo así.
     // Son categorías de un estándar llamado BISAC.
-    "categories": "String[ ], 
+    categories: "String[ ], 
     maturityRating: "NOT_MATURE" || "MATURE",
     imageLinks: Object { 
         smallThumbnail: String // Es un URL de la portada
