@@ -69,11 +69,11 @@ Los libros obtenidos por esta API obtienen información que nos puede ser releva
     categories: "String[ ], 
     maturityRating: "NOT_MATURE" || "MATURE",
     imageLinks: Object { 
-        smallThumbnail: String // Es un URL de la portada
+        smallThumbnail: String, // Es un URL de la portada
         thumbnail: String // Es otro URL de la portada
         // ...
         // Puede tener más elementos, no sé porqué lo quisieron guardar como objeto
-    }
+    },
     language: String // Idioma del libro
 }
 ```
