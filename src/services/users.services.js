@@ -206,6 +206,25 @@ class UserService {
             throw new ServiceError("Error al buscar el usuario por email: " + err.message, 500);
         }
     }
+
+    async getAllUsers() {
+        try {
+            const users = await userRepository.selectUsers();
+
+            if (!users) {
+                throw new ServiceError("No se han encontrado usuarios en la base de datos", 404);
+            }
+
+            users.forEach(user => delete user.password_hash);
+            return users;
+        }
+        catch (err) {
+            if (err instanceof ServiceError) {
+                throw err;
+            }
+            throw new ServiceError("Error al obtener los usuarios en la base de datos: " + err.message, 500)
+        }
+    }
 }
 
 export const userService = new UserService()

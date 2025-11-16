@@ -143,8 +143,11 @@ Se puede que el cuerpo no tenga todos los parámetros, o que se le entregue stri
 - `GET /api/users/:id`
   Esta dirección devuelve el objeto dada una ID de usuario.
 
+- `GET /api/users`
+  Obtiene todos los usuarios, por motivos de pruebas.
+
 - `GET /api/users?email=`
-  El parámetro query **tiene** que ser `email`, devuelve un usuario dado el correo.
+  El parámetro query **tiene** que ser `email`, devuelve un usuario dado el correo. De lo contrario, devuelve todos los usuarios.
 
 - `PATCH /api/users/:id`
   Dado una ID de usuario y un objeto o JSON con cualquiera de las propiedades descritas para la creación del usuario, actualiza su información con el cuerpo dado.

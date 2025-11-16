@@ -8,6 +8,12 @@ class UserRepository {
         return user ? user.get({ plain: true }) : null;
     };
 
+    async selectUsers() {
+        const users = await User.findAll();
+        const plainUsers = users.map(user => user.get({ plain: true }));
+        return plainUsers;
+    }
+
     async selectUserByEmail(email) {
         const user = await User.findOne({ where: {email} });
         return user ? user.get({ plain: true }) : null;

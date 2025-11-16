@@ -6,8 +6,8 @@ export const userRouter = Router();
 // POST /api/users/
 userRouter.post("/", userController.registerUser);
 
-// GET /api/users?email=
-userRouter.get("/", userController.searchUserByEmail);
+// GET /api/users?email= || GET /api/users
+userRouter.get("/", userController.getUsers);
 
 // GET /api/users/:id
 userRouter.get("/:id", userController.searchUserById);
