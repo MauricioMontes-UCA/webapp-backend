@@ -1,7 +1,11 @@
 import bcrypt from "bcrypt";
+import dotenv from "dotenv";
 import jwt from "jsonwebtoken";
 import { userRepository } from "../repositories/user.repository.js";
 import { ServiceError } from "./service.error.js";
+import { generateToken } from "../utils/auth.utils.js";
+
+dotenv.config()
 
 class AuthService {
     async verifyCredentials(email, password) {
@@ -24,17 +28,13 @@ class AuthService {
             }
 
             // 4. Si todo es correcto, generar el JWT
-            const payload = {
-                id: user.id,
-                username: user.username,
-                email: user.email
-            };
-
-            // El token expira en 1 hora. El secreto debe estar en una variable de entorno.
-            const token = jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '1h' });
+            const token = generateToken(user.id, user.username, user.email);
 
             // 5. Devolver el token
-            return token;
+            return {
+                "user": user,
+                "token": token
+            };
         } 
         catch (err) {
             // Si ya es un ServiceError, relanzarlo para que el controlador lo atrape

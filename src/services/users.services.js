@@ -2,6 +2,7 @@ import { UniqueConstraintError } from "sequelize";
 import { userRepository } from "../repositories/user.repository.js";
 import { hashPassword, verifyValidEmail, verifyValidPassword } from "../utils/users.utils.js";
 import { ServiceError } from "./service.error.js";
+import { generateToken } from "../utils/auth.utils.js";
 
 class UserService {
     async registerUser(userData) {
@@ -34,9 +35,15 @@ class UserService {
             data.password_hash = hashedPassword;
             delete data.password;
 
+            // Crea el nuevo usuario
             const newUser = await userRepository.createUser(data);
             delete newUser.password_hash;
-            return newUser;
+
+            return {
+                // Genera un token de inicio de sesión 
+                token: generateToken(newUser.id, newUser.username, newUser.email),
+                user: newUser
+            };
         } 
         catch (err) {
             // Si el correo ya está registrado, tira este error
