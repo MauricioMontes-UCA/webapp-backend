@@ -20,16 +20,17 @@ class AuthService {
             if (!user) {
                 throw new ServiceError("Credenciales inválidas", 401); // 401 Unauthorized
             }
-
+            
             // 3. Comparar la contraseña con el hash almacenado
             const isPasswordValid = await bcrypt.compare(password, user.password_hash);
             if (!isPasswordValid) {
                 throw new ServiceError("Credenciales inválidas", 401); // 401 Unauthorized
             }
-
-            // 4. Si todo es correcto, generar el JWT
+            
+            // 4. Si todo es correcto, generar el JWT y borrar información del usuario no necesaria
             const token = generateToken(user.id, user.username, user.email);
-
+            delete user.password_hash;
+            
             // 5. Devolver el token
             return {
                 "user": user,
