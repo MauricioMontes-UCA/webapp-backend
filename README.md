@@ -1,4 +1,12 @@
-# Indicaciones generales
+# DOCUMENTACIÓN
+
+## Índice
+
+- [Indicaciones generales](#indicaciones-generales)
+- [Servicio de libros](#servicio-de-libros)
+- [Servicio de usuarios](#servicio-de-usuarios)
+
+## Indicaciones generales
 
 Cuando clonen el repositorio, favor correr en la terminal:
 
@@ -8,7 +16,9 @@ npm install
 
 Este comando instala las dependencias que se encuentran en el `package.json`. Luego, crear un archivo `.env` en donde se encontrarán variables de entorno que son necesarias para funcionar. Esas variables de entorno estarán en otro medio, como en el equipo de teams, o bueno preguntas. La idea es que no se encuentren públicamente.
 
-### Endpoints disponibles
+## Servicio de libros
+
+### Endpoints
 
 - `GET /api/books/:id`  
   Obtiene la información de un libro por su ID.
@@ -33,7 +43,7 @@ Este comando instala las dependencias que se encuentran en el `package.json`. Lu
   ```
   Responde con { items: [...] } (máximo 10 resultados).
 
-## Cómo usar el servicio de libros
+### Trabajando con el servicio
 
 Los libros obtenidos por esta API obtienen información que nos puede ser relevante para el sitio web. La estructura de cada libro es la siguiente:
 
@@ -112,3 +122,89 @@ const subjects = ['recent', 'bestseller', 'fiction', 'mystery', 'romance', 'scie
 ```
 
 Se puede que el cuerpo no tenga todos los parámetros, o que se le entregue strings vacíos; funciona de ambas formas. La respuesta es la misma que la del endpoint anterior.
+
+## Servicio de usuarios
+
+### Endpoints
+
+- `POST /api/users/`
+  Es a esta dirección que se le tiene que mandar un objeto o JSON con la estructura:
+  ```json
+  {
+    "username": "string",
+    "email": "string",
+    "password": "string",
+    "first_name": "string",
+    "last_name": "string"
+  }
+  ```
+  Responde con el usuario creado como objeto / JSON.
+
+- `GET /api/users/:id`
+  Esta dirección devuelve el objeto dada una ID de usuario.
+
+- `GET /api/users?email=`
+  El parámetro query **tiene** que ser `email`, devuelve un usuario dado el correo.
+
+- `PATCH /api/users/:id`
+  Dado una ID de usuario y un objeto o JSON con cualquiera de las propiedades descritas para la creación del usuario, actualiza su información con el cuerpo dado.
+
+- `DELETE /api/users/:id`
+  Dada la ID de un usuario, borra al usuario. Devuelve un JSON con el mensaje de confirmación.
+
+### Trabajando con el servicio
+
+Los usuarios que son devueltos por parte de la API contienen la siguiente estructura:
+
+```js
+{
+  "id": Int,
+	"username": String,
+	"email": String,
+	"created_at": String,
+	"first_name": String || null,
+	"last_name": String || null
+}
+```
+
+Nótese que los nombres pueden ser `null`.
+
+Hay validaciones realizadas para que, a la hora de buscar por email, crear el usuario o actualizarlo:
+- `email` tenga un formato válido.
+- `email` sea único por cada usuario. Si ya hay un usuario con un email ingresado, no puede crearse el usuario.
+- `password` para ser seguro tiene que tener 12 carácteres como mínimo, mayúsculas, minúsculas, y alguno símbolo especial (`#?!@$%^&*-`).
+
+**Los métodos `GET` son solo para fines de pruebas con un servicio como Postman o Insomnia. Pueden usarse de momento MIENTRAS NO HAY UN SERVICIO DE AUTENTICACIÓN.**
+
+Un ejemplo de cómo se usa la API con los métodos GET:
+```
+http://localhost:5000/api/users/9
+```
+
+Respuesta:
+```json
+{
+	"id": 9,
+	"username": "test1",
+	"email": "test1@example.com",
+	"created_at": "2025-11-16T06:16:07.457Z",
+	"first_name": "Jane",
+	"last_name": "Doe"
+}
+```
+
+El resultado será el mismo si se usa `http://localhost:5000/api/users?email=test1@example.com`
+
+En el caso del endpoint `POST /api/users/`, las propiedades `first_name` y `last_name` son opcionales, pero las otras tres (`email`, `username` y `password`) son obligatorias, si no están presentes devolverá un error.
+
+Al usar el método `POST`, el cuerpo puede ser simplemente:
+
+```js
+{
+	username: "testuser",
+	email: "testing@example.com",
+  password: "$eCurE_P4sSw0rD"
+}
+```
+
+Este no es el caso para el `PATCH /api/users/`. Si se le manda un cuerpo vacío, se procesará una actualización a pesar de que no hay nada que actualizar.
