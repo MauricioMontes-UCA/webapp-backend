@@ -33,14 +33,20 @@ class UserService {
             const hashedPassword = await hashPassword(data.password);
             data.password_hash = hashedPassword;
             delete data.password;
-            return await userRepository.createUser(data);
+
+            const newUser = await userRepository.createUser(data);
+            delete newUser.password_hash;
+            return newUser;
         } 
         catch (err) {
             // Si el correo ya está registrado, tira este error
             if (err instanceof UniqueConstraintError) { 
                 throw new ServiceError("El correo ya está registrado en la base de datos", 409);
             }
-
+            // Si ya es un ServiceError, relanzar tal cual
+            if (err instanceof ServiceError) {
+                throw err;
+            }
             throw new ServiceError("Error al crear el usuario: " + err.message, 500);
         }
     }
@@ -57,6 +63,11 @@ class UserService {
 
     async updateUser(userId, updateData) {
         try {
+            let user = await userRepository.selectUserById(userId)
+            if (!user) {
+                throw new ServiceError("No se encontró el usuario para actualizar", 404);
+            }
+
             const allowedFields = ["first_name", "last_name", "username", "email", "password"];
             const data = {};
 
@@ -79,7 +90,7 @@ class UserService {
                 }
 
                 // Y si no está siendo usado por otro usuario
-                const user = await userRepository.selectUserByEmail(data.email);
+                user = await userRepository.selectUserByEmail(data.email);
                 if (user && user.id !== userId) {
                     throw new ServiceError("El correo ya está siendo utilizado por otro usuario", 409)
                 }
@@ -108,10 +119,16 @@ class UserService {
                 throw new ServiceError("No se encontró el usuario para actualizar", 404);
             }
 
-            // Para este punto, el usuario debería haber sido actualizado y el usuario 
-            return await userRepository.selectUserById(userId);
+            // Para este punto, el usuario debería haber sido actualizado y el usuario
+            user = await userRepository.selectUserById(userId);
+            delete user.password_hash;
+
+            return user;
         } 
         catch (err) {
+            if (err instanceof ServiceError) {
+                throw err;
+            }
             throw new ServiceError("Error al actualizar el usuario: " + err.message, 500);
         }
     }
@@ -126,6 +143,9 @@ class UserService {
             return { message: "Usuario eliminado correctamente", deletedCount };
         } 
         catch (err) {
+            if (err instanceof ServiceError) {
+                throw err;
+            }
             throw new ServiceError("Error al borrar el usuario: " + err.message, 500);
         }
     }
@@ -148,12 +168,16 @@ class UserService {
                 throw new ServiceError("No ha sido encontrado el usuario con ese correo", 404);
             }
 
+            delete user.password_hash;
             // Por otro lado, devuelve al usuario
             return user;
         } 
         catch (err) {
             // Cualquier otro error es un error interno del servidor, probablemente mala conexión con 
             // la base de datos.
+            if (err instanceof ServiceError) {
+                throw err;
+            }
             throw new ServiceError("Error al buscar el usuario por email: " + err.message, 500);
         }
     }
@@ -162,18 +186,23 @@ class UserService {
     async findUserById(id) {
         try {
             const user = await userRepository.selectUserById(id);
+            // const plainUser = user.get ? user.get({ plain: true }) : { ...user };
 
             // Si el usuario con ese correo no existe, tira un error 404
             if (!user) {
                 throw new ServiceError("No ha sido encontrado el usuario con ese correo", 404);
             }
 
+            delete user.password_hash;
             // Por otro lado, devuelve al usuario
             return user;
         } 
         catch (err) {
             // Cualquier otro error es un error interno del servidor, probablemente mala conexión con 
             // la base de datos.
+            if (err instanceof ServiceError) {
+                throw err;
+            }
             throw new ServiceError("Error al buscar el usuario por email: " + err.message, 500);
         }
     }

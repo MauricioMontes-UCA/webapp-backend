@@ -22,23 +22,23 @@ export function verifyValidPassword(password) {
 
     if (!/.{12,}/.test(password)) {
         errorMessage = "La contraseña debe tener al menos 12 caracteres";
-        isValid = !isValid;
+        isValid = false;
     }
     if (!/[A-Z]/.test(password)) {
         errorMessage = "La contraseña debe contener al menos una letra mayúscula"
-        isValid = !isValid;
+        isValid = false;
     }
     if (!/[a-z]/.test(password)) {
         errorMessage = "La contraseña debe contener al menos una letra minúscula";
-        isValid = !isValid;
+        isValid = false;
     }
     if (!/[0-9]/.test(password)) {
         errorMessage = "La contraseña debe contener al menos un número";
-        isValid = !isValid;
+        isValid = false;
     }
     if (!/[#?!@$%^&*\-]/.test(password)) {
         errorMessage = "La contraseña debe contener al menos un símbolo especial (#?!@$%^&*-)";
-        isValid = !isValid;
+        isValid = false;
     }
 
     return { 

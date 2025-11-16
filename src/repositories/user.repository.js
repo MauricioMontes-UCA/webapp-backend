@@ -5,17 +5,17 @@ class UserRepository {
     // modelo User
     async createUser(data) {
         const user = await User.create(data)
-        return user;
+        return user ? user.get({ plain: true }) : null;
     };
 
     async selectUserByEmail(email) {
         const user = await User.findOne({ where: {email} });
-        return user;
+        return user ? user.get({ plain: true }) : null;
     }
 
     async selectUserById(id) {
         const user = await User.findOne({ where: {id} });
-        return user;
+        return user ? user.get({ plain: true }) : null;
     }
 
     async updateUser(id, newData) {
