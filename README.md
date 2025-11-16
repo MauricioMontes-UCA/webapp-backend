@@ -158,7 +158,7 @@ Los usuarios que son devueltos por parte de la API contienen la siguiente estruc
 
 ```js
 {
-  "id": Int,
+  	"id": Int,
 	"username": String,
 	"email": String,
 	"created_at": String,
@@ -203,7 +203,7 @@ Al usar el método `POST`, el cuerpo puede ser simplemente:
 {
 	username: "testuser",
 	email: "testing@example.com",
-  password: "$eCurE_P4sSw0rD"
+  	password: "$eCurE_P4sSw0rD"
 }
 ```
 
