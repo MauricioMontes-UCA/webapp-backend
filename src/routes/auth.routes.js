@@ -4,4 +4,6 @@ import { authController } from "../controllers/auth.controller.js";
 export const authRouter = Router();
 
 authRouter.post("/login", authController.loginUser);
-authRouter.post("/logout", authController.logoutUser);
+
+// No borra nada realmente, o bueno, solo el token de autenticación
+authRouter.delete("/logout", authController.logoutUser);

@@ -130,7 +130,13 @@ class UserService {
             user = await userRepository.selectUserById(userId);
             delete user.password_hash;
 
-            return user;
+            // Se genera un nuevo token de sesión, con la información actualizada.
+            const token = generateToken(user.id, user.username, user.email)
+
+            return {
+                "newUser": user, 
+                "token": token
+            };
         } 
         catch (err) {
             if (err instanceof ServiceError) {

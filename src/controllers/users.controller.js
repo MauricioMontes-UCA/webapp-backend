@@ -111,11 +111,18 @@ class UserController {
             // Usar req.user.id es más seguro que req.params.id
             // porque viene directamente del token verificado
             const userId = req.user.id;
-            const updatedUser = await userService.updateUser(userId, req.body);
+            const { newUser, token } = await userService.updateUser(userId, req.body);
 
             console.info("Usuario actualizado exitosamente");
 
-            res.status(200).json(updatedUser)
+            res.cookie('authToken', token, {
+                httpOnly: true,
+                secure: false,
+                sameSite: 'strict',
+                maxAge: 3600 * 1000
+            })
+
+            res.status(200).json(newUser)
         }
         catch (err) {
             console.error("Error en el controlador", err.message);
@@ -137,6 +144,13 @@ class UserController {
             // porque viene directamente del token verificado
             const userId = req.user.id;
             const result = await userService.deleteUser(userId);
+
+            res.clearCookie('authToken', {
+                httpOnly: true,
+                secure: false,
+                sameSite: 'strict'
+            });
+
             console.info("Usuario eliminado correctamente");
             res.status(200).json(result);
         } catch (err) {

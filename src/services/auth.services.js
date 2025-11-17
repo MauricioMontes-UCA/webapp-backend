@@ -1,6 +1,5 @@
 import bcrypt from "bcrypt";
 import dotenv from "dotenv";
-import jwt from "jsonwebtoken";
 import { userRepository } from "../repositories/user.repository.js";
 import { ServiceError } from "./service.error.js";
 import { generateToken } from "../utils/auth.utils.js";
@@ -31,7 +30,7 @@ class AuthService {
             const token = generateToken(user.id, user.username, user.email);
             delete user.password_hash;
             
-            // 5. Devolver el token
+            // 5. Devolver el token y el usuario
             return {
                 "user": user,
                 "token": token
