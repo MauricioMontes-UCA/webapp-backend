@@ -1,13 +1,19 @@
 import { userService } from "../services/users.services.js";
 
 class UserController {
-
     // se tiene que trabajar con un POST
     async registerUser(req, res) {
         try {
-            const user = await userService.registerUser(req.body);
+            const { user, token } = await userService.registerUser(req.body);
 
             console.info("Usuario creado exitosamente");
+
+            res.cookie('authToken', token, {
+                httpOnly: true,
+                secure: false, // el sitio no es HTTPS, así que no puede ser true, creo
+                sameSite: 'strict',
+                maxAge: 3600 * 1000 // 1 hora
+            });
 
             res.status(201).json(user)
         }
@@ -16,7 +22,29 @@ class UserController {
 
             const status = err.status || 500;
 
-            res.status(status).json({ 
+            res.status(status).json({
+                message: err.message || "Error interno del servidor",
+                code: status
+            });
+        }
+    }
+
+    // Obtiene el perfil del usuario autenticado
+    async getMyProfile(req, res) {
+        try {
+            const userId = req.user.id;
+            const user = await userService.findUserById(userId);
+
+            console.info("Perfil del usuario autenticado obtenido");
+
+            res.status(200).json(user);
+        }
+        catch (err) {
+            console.error("Error en el controlador", err.message);
+
+            const status = err.status || 500;
+
+            res.status(status).json({
                 message: err.message || "Error interno del servidor",
                 code: status
             });
@@ -36,7 +64,7 @@ class UserController {
         }
         catch (err) {
             console.error("Error en el controlador", err.message);
-            
+
             const status = err.status || 500;
 
             res.status(status).json({
@@ -45,28 +73,28 @@ class UserController {
             })
         }
     }
-    
-    // Buscar usuario por email usando query param ?email=...
-    // No creo que sea usada por el frontend, pero sirve para pruebas supongo
-    async searchUserByEmail(req, res) {
+
+    // Buscar usuarios. Si se provee un email en el query param, busca por email.
+    // Si no, devuelve todos los usuarios.
+    async getUsers(req, res) {
         try {
             const { email } = req.query;
-            if (!email) {
-                return res.status(400).json({ 
-                    message: "Falta el parámetro 'email'", 
-                    code: 400 
-                });
-            }
-            const user = await userService.findUserByEmail(email);
-            
-            console.info("Usuario encontrado");
+            let users;
 
-            res.status(200).json(user);
+            if (email) {
+                users = await userService.findUserByEmail(email);
+                console.info("Usuario encontrado por email");
+            } else {
+                users = await userService.getAllUsers();
+                console.info("Todos los usuarios encontrados");
+            }
+
+            res.status(200).json(users);
         }
         catch (err) {
             console.error("Error en el controlador", err.message);
 
-            const status = err.status // || 500;
+            const status = err.status || 500;
 
             res.status(status).json({
                 message: err.message || "Error interno del servidor",
@@ -77,18 +105,28 @@ class UserController {
 
     // se tiene que trabajar con un PATCH, y también un parámetro id
     // la ruta probablemente sea del estilo PATCH users/:id
+    // NOTA: authorizeOwner ya verificó que req.user.id === req.params.id
     async updateUser(req, res) {
         try {
-            const userId = req.params.id
-            const updatedUser = await userService.updateUser(userId, req.body);
-            
+            // Usar req.user.id es más seguro que req.params.id
+            // porque viene directamente del token verificado
+            const userId = req.user.id;
+            const { newUser, token } = await userService.updateUser(userId, req.body);
+
             console.info("Usuario actualizado exitosamente");
 
-            res.status(200).json(updatedUser)
-        } 
+            res.cookie('authToken', token, {
+                httpOnly: true,
+                secure: false,
+                sameSite: 'strict',
+                maxAge: 3600 * 1000
+            })
+
+            res.status(200).json(newUser)
+        }
         catch (err) {
             console.error("Error en el controlador", err.message);
-            
+
             const status = err.status || 500;
 
             res.status(status).json({
@@ -97,12 +135,22 @@ class UserController {
             })
         }
     }
-    
+
     // Elimina un usuario por id (DELETE /users/:id)
+    // NOTA: authorizeOwner ya verificó que req.user.id === req.params.id
     async deleteUser(req, res) {
         try {
-            const userId = req.params.id;
+            // Usar req.user.id es más seguro que req.params.id
+            // porque viene directamente del token verificado
+            const userId = req.user.id;
             const result = await userService.deleteUser(userId);
+
+            res.clearCookie('authToken', {
+                httpOnly: true,
+                secure: false,
+                sameSite: 'strict'
+            });
+
             console.info("Usuario eliminado correctamente");
             res.status(200).json(result);
         } catch (err) {

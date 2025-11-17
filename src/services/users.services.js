@@ -2,6 +2,7 @@ import { UniqueConstraintError } from "sequelize";
 import { userRepository } from "../repositories/user.repository.js";
 import { hashPassword, verifyValidEmail, verifyValidPassword } from "../utils/users.utils.js";
 import { ServiceError } from "./service.error.js";
+import { generateToken } from "../utils/auth.utils.js";
 
 class UserService {
     async registerUser(userData) {
@@ -34,9 +35,15 @@ class UserService {
             data.password_hash = hashedPassword;
             delete data.password;
 
+            // Crea el nuevo usuario
             const newUser = await userRepository.createUser(data);
             delete newUser.password_hash;
-            return newUser;
+
+            return {
+                // Genera un token de inicio de sesión 
+                token: generateToken(newUser.id, newUser.username, newUser.email),
+                user: newUser
+            };
         } 
         catch (err) {
             // Si el correo ya está registrado, tira este error
@@ -123,7 +130,13 @@ class UserService {
             user = await userRepository.selectUserById(userId);
             delete user.password_hash;
 
-            return user;
+            // Se genera un nuevo token de sesión, con la información actualizada.
+            const token = generateToken(user.id, user.username, user.email)
+
+            return {
+                "newUser": user, 
+                "token": token
+            };
         } 
         catch (err) {
             if (err instanceof ServiceError) {
@@ -204,6 +217,25 @@ class UserService {
                 throw err;
             }
             throw new ServiceError("Error al buscar el usuario por email: " + err.message, 500);
+        }
+    }
+
+    async getAllUsers() {
+        try {
+            const users = await userRepository.selectUsers();
+
+            if (!users) {
+                throw new ServiceError("No se han encontrado usuarios en la base de datos", 404);
+            }
+
+            users.forEach(user => delete user.password_hash);
+            return users;
+        }
+        catch (err) {
+            if (err instanceof ServiceError) {
+                throw err;
+            }
+            throw new ServiceError("Error al obtener los usuarios en la base de datos: " + err.message, 500)
         }
     }
 }
