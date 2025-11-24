@@ -11,10 +11,10 @@ userRouter.post("/", userController.registerUser);
 userRouter.get("/me", authenticateToken, userController.getMyProfile);
 
 // GET /api/users?email= || GET /api/users
-userRouter.get("/", userController.getUsers);
+// userRouter.get("/", userController.getUsers);
 
 // GET /api/users/:id
-userRouter.get("/:id", userController.searchUserById);
+// userRouter.get("/:id", userController.searchUserById);
 
 // PATCH /api/users/me - El usuario actualiza su propio perfil
 userRouter.patch("/me", authenticateToken, userController.updateUser);

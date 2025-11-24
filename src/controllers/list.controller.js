@@ -1,14 +1,14 @@
-import { readingListRepository } from "../repositories/list.repository.js";
+import { readingListService } from "../services/list.services.js";
 
 class ReadingListController {
   /**
-   * GET /lists/user/:userId
-   * Obtiene todas las listas de un usuario
+   * GET /lists/user/me
+   * Obtiene todas las listas del usuario autenticado
    */
   async getListsByUser(req, res) {
     try {
-      const { userId } = req.params;
-      const lists = await readingListRepository.getListsByUser(userId);
+      const userId = req.user.id;
+      const lists = await readingListService.getListsByUser(userId);
 
       res.status(200).json({
         message: "Listas obtenidas exitosamente",
@@ -16,32 +16,22 @@ class ReadingListController {
       });
     } catch (error) {
       console.error("Error en getListsByUser:", error.message);
-      res.status(500).json({ message: "Error interno del servidor" });
+      const status = error.status || 500;
+      res.status(status).json({
+        message: error.message || "Error interno del servidor",
+        details: error.details || null
+      });
     }
   }
 
   /**
    * GET /lists/:listId/books
    * Obtiene todos los libros de una lista
-   * 
-   * transformación de datos para que el frontend reciba
-   *  exactamente lo que espera: { id, cover, title, author, pages, progress }
    */
-
   async getBooksInList(req, res) {
     try {
       const { listId } = req.params;
-      const books = await readingListRepository.getBooksInList(listId);
-
-      // Añadido: mapear los datos de la DB a lo que espera el frontend
-      const formattedBooks = books.map((book, index) => ({
-        id: book.id,
-        cover: book.cover || "https://via.placeholder.com/120x180", 
-        title: book.title || `Libro de ejemplo ${index + 1}`,
-        author: book.author || "Autor desconocido",
-        pages: book.pages || 100,
-        progress: book.progress || 0
-      }));
+      const formattedBooks = await readingListService.getBooksInList(listId);
 
       res.status(200).json({
         message: "Libros de la lista obtenidos exitosamente",
@@ -49,22 +39,25 @@ class ReadingListController {
       });
     } catch (error) {
       console.error("Error en getBooksInList:", error.message);
-      res.status(500).json({ message: "Error interno del servidor" });
+      const status = error.status || 500;
+      res.status(status).json({
+        message: error.message || "Error interno del servidor",
+        details: error.details || null
+      });
     }
   }
 
   /**
    * POST /lists/:listId/books
    * Agrega un libro a la lista
-   * Body: { bookId }
+   * Body: { bookId, cover?, title?, author?, pages?, progress? }
    */
   async addBookToList(req, res) {
     try {
       const { listId } = req.params;
-      // Recibir todo lo que el frontend manda
       const { bookId, cover, title, author, pages, progress } = req.body;
-      // Pasar todos los datos al repositorio
-      const book = await readingListRepository.addBookToList(listId, {
+
+      const book = await readingListService.addBookToList(listId, {
         bookId,
         cover,
         title,
@@ -79,7 +72,11 @@ class ReadingListController {
       });
     } catch (error) {
       console.error("Error en addBookToList:", error.message);
-      res.status(500).json({ message: "Error interno del servidor" });
+      const status = error.status || 500;
+      res.status(status).json({
+        message: error.message || "Error interno del servidor",
+        details: error.details || null
+      });
     }
   }
 
@@ -93,17 +90,20 @@ class ReadingListController {
       const { listId } = req.params;
       const { bookId } = req.body;
 
-      await readingListRepository.removeBookFromList(listId, bookId);
+      await readingListService.removeBookFromList(listId, bookId);
 
       res.status(200).json({
         message: "Libro eliminado de la lista exitosamente"
       });
     } catch (error) {
       console.error("Error en removeBookFromList:", error.message);
-      res.status(500).json({ message: "Error interno del servidor" });
+      const status = error.status || 500;
+      res.status(status).json({
+        message: error.message || "Error interno del servidor",
+        details: error.details || null
+      });
     }
   }
-
 }
 
 export const readingListController = new ReadingListController();

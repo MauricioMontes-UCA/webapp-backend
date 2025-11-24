@@ -4,11 +4,13 @@ class RatingController {
     /**
      * POST /api/ratings
      * Crear una nueva calificación
-     * Body: { user_id, book_id, rating, comment? }
+     * Body: { book_id, rating, comment? }
+     * El user_id se obtiene de req.user (autenticación)
      */
     async createRating(req, res) {
         try {
-            const { user_id, book_id, rating, comment } = req.body;
+            const { book_id, rating, comment } = req.body;
+            const user_id = req.user.id;
 
             const result = await ratingService.createRating({
                 user_id,
@@ -36,21 +38,15 @@ class RatingController {
     /**
      * GET /api/ratings/book/:bookId
      * Obtener todas las calificaciones de un libro
-     * Query params: ?userId=123 (opcional)
+     * Devuelve info completa: promedio + calificación del usuario autenticado
      */
     async getBookRatings(req, res) {
         try {
             const { bookId } = req.params;
-            const { userId } = req.query;
+            const userId = req.user.id;
 
-            let result;
-            if (userId) {
-                // Si se proporciona userId, devolver info completa (promedio + calificación del usuario)
-                result = await ratingService.getBookRatingInfo(bookId, parseInt(userId));
-            } else {
-                // Solo las calificaciones del libro
-                result = await ratingService.getBookRatings(bookId);
-            }
+            // Devolver info completa (promedio + calificación del usuario autenticado)
+            const result = await ratingService.getBookRatingInfo(bookId, userId);
 
             res.status(200).json({
                 message: "Calificaciones obtenidas exitosamente",
@@ -69,17 +65,14 @@ class RatingController {
     /**
      * GET /api/ratings/book/:bookId/stats
      * Obtener estadísticas de calificación de un libro (promedio y total)
-     * Query params: ?userId=123 (opcional, para incluir calificación del usuario)
+     * Incluye la calificación del usuario autenticado
      */
     async getBookRatingStats(req, res) {
         try {
             const { bookId } = req.params;
-            const { userId } = req.query;
+            const userId = req.user.id;
 
-            const result = await ratingService.getBookRatingInfo(
-                bookId, 
-                userId ? parseInt(userId) : null
-            );
+            const result = await ratingService.getBookRatingInfo(bookId, userId);
 
             res.status(200).json({
                 message: "Estadísticas obtenidas exitosamente",
@@ -96,19 +89,19 @@ class RatingController {
     }
 
     /**
-     * GET /api/ratings/user/:userId
-     * Obtener todas las calificaciones de un usuario
+     * GET /api/ratings/user/me
+     * Obtener todas las calificaciones del usuario autenticado
      */
     async getUserRatings(req, res) {
         try {
-            const { userId } = req.params;
+            const userId = req.user.id;
 
-            const ratings = await ratingService.getUserRatings(parseInt(userId));
+            const ratings = await ratingService.getUserRatings(userId);
 
             res.status(200).json({
                 message: "Calificaciones del usuario obtenidas exitosamente",
                 data: {
-                    userId: parseInt(userId),
+                    userId: userId,
                     ratings,
                     total: ratings.length
                 }
@@ -126,11 +119,13 @@ class RatingController {
     /**
      * PUT /api/ratings
      * Actualizar una calificación existente
-     * Body: { user_id, book_id, rating?, comment? }
+     * Body: { book_id, rating?, comment? }
+     * El user_id se obtiene de req.user (autenticación)
      */
     async updateRating(req, res) {
         try {
-            const { user_id, book_id, rating, comment } = req.body;
+            const { book_id, rating, comment } = req.body;
+            const user_id = req.user.id;
 
             const updateData = {};
             if (rating !== undefined) updateData.rating = rating;
@@ -156,11 +151,13 @@ class RatingController {
     /**
      * DELETE /api/ratings
      * Eliminar una calificación
-     * Body: { user_id, book_id }
+     * Body: { book_id }
+     * El user_id se obtiene de req.user (autenticación)
      */
     async deleteRating(req, res) {
         try {
-            const { user_id, book_id } = req.body;
+            const { book_id } = req.body;
+            const user_id = req.user.id;
 
             const result = await ratingService.deleteRating(user_id, book_id);
 
