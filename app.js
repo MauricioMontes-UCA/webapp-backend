@@ -2,6 +2,7 @@ import { getConnection } from "./src/repositories/db/connection.js"
 import express from "express"
 import dotenv from "dotenv"
 import cors from "cors"
+import cookieParser from "cookie-parser"
 import router from "./src/router.js"
 
 dotenv.config()
@@ -12,6 +13,7 @@ const app = express()
 
 app.use(cors())
 app.use(express.json())
+app.use(cookieParser()) // Necesario para leer cookies
 app.use("/api", router)
 
 // ESTO ES PARA PROBAR LA CONEXIÓN
