@@ -1,11 +1,12 @@
 import { Router } from "express"
 import { userController } from "../controllers/users.controller.js";
 import { authenticateToken } from "../middlewares/middlewares.js";
+import { validateRegisterBody, validateUpdateBody } from "../validators/users.validators.js";
 
 export const userRouter = Router();
 
 // POST /api/users/ - Registro público (no requiere autenticación)
-userRouter.post("/", userController.registerUser);
+userRouter.post("/", validateRegisterBody, userController.registerUser);
 
 // GET /api/users/me - Obtiene el perfil del usuario autenticado
 userRouter.get("/me", authenticateToken, userController.getMyProfile);
@@ -17,7 +18,7 @@ userRouter.get("/me", authenticateToken, userController.getMyProfile);
 // userRouter.get("/:id", userController.searchUserById);
 
 // PATCH /api/users/me - El usuario actualiza su propio perfil
-userRouter.patch("/me", authenticateToken, userController.updateUser);
+userRouter.patch("/me", authenticateToken, validateUpdateBody, userController.updateUser);
 
 // DELETE /api/users/me - El usuario elimina su propia cuenta
 userRouter.delete("/me", authenticateToken, userController.deleteUser);

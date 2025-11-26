@@ -1,6 +1,6 @@
 import { UniqueConstraintError } from "sequelize";
 import { userRepository } from "../repositories/user.repository.js";
-import { hashPassword, verifyValidEmail, verifyValidPassword } from "../utils/users.utils.js";
+import { hashPassword } from "../utils/users.utils.js";
 import { ServiceError } from "./service.error.js";
 import { generateToken } from "../utils/auth.utils.js";
 
@@ -9,26 +9,6 @@ class UserService {
         try {
             // Lógica de negocios:
             const data = { ...userData };
-            
-            // Validar campos requeridos y que no sean vacíos
-            const requiredFields = ["username", "email", "password"];
-            const emptyFields = requiredFields.filter(
-                field => !data[field] || typeof data[field] !== "string" || data[field].trim() === ""
-            );
-            if (emptyFields.length > 0) {
-                throw new ServiceError(`Campos requeridos vacíos: ${emptyFields.join(", ")}`, 400);
-            }
-
-            // Validar formato de email
-            if (!verifyValidEmail(data.email)) {
-                throw new ServiceError("El correo no tiene un formato válido", 400);
-            }
-
-            // Validar que la contraseña sea segura
-            const validation = verifyValidPassword(data.password);
-            if (!validation.isValid) {
-                throw new ServiceError("La contraseña no es válida: " + validation.message, 400);
-            }
             
             // Encripta la contraseña en un hash
             const hashedPassword = await hashPassword(data.password);
@@ -75,26 +55,27 @@ class UserService {
                 throw new ServiceError("No se encontró el usuario para actualizar", 404);
             }
 
-            const allowedFields = ["first_name", "last_name", "username", "email", "password"];
-            const data = {};
+            // const allowedFields = ["first_name", "last_name", "username", "email", "password"];
+            const data = { ...updateData };
 
-            // Obtiene los datos del objeto y se queda con los que no son espacios vacíos
-            // Además de filtrar cualquier otra entrada que no sean las permitidas...
-            for (const field of allowedFields) {
-                if (Object.prototype.hasOwnProperty.call(updateData, field)) {
-                    const value = updateData[field];
-                    if (typeof value === "string" && value.trim() !== "") {
-                        data[field] = value;
-                    }
-                }
-            }
+            // // Obtiene los datos del objeto y se queda con los que no son espacios vacíos
+            // // Además de filtrar cualquier otra entrada que no sean las permitidas...
+            // for (const field of allowedFields) {
+            //     if (Object.prototype.hasOwnProperty.call(updateData, field)) {
+            //         const value = updateData[field];
+            //         if (typeof value === "string" && value.trim() !== "") {
+            //             data[field] = value;
+            //         }
+            //     }
+            // }
 
             // Verifica si uno de los datos a actualizar es el email...
             if (data.email) {
-                // Si el formato del email es válido...
-                if (!verifyValidEmail(data.email)) {
-                    throw new ServiceError("El correo no tiene un formato válido", 400);
-                }
+
+            //     // Si el formato del email es válido...
+            //     if (!verifyValidEmail(data.email)) {
+            //         throw new ServiceError("El correo no tiene un formato válido", 400);
+            //     }
 
                 // Y si no está siendo usado por otro usuario
                 user = await userRepository.selectUserByEmail(data.email);
@@ -106,12 +87,12 @@ class UserService {
             // Si una de los datos a actualizar es la contraseña...
             if (data.password) {
                 // Verifica si es una contraseña válida...
-                const validation = verifyValidPassword(data.password);
-                if (!validation.isValid) {
-                    // En caso de no serlo, menciona qué condición no se ha cumplido...
-                    throw new ServiceError("La contraseña no es válida: " + validation.message, 400);
-                }
-                // Agrega la propiedad password_hash y borra la propiedad password
+                // const validation = verifyValidPassword(data.password);
+                // if (!validation.isValid) {
+                //     // En caso de no serlo, menciona qué condición no se ha cumplido...
+                //     throw new ServiceError("La contraseña no es válida: " + validation.message, 400);
+                // }
+                // // Agrega la propiedad password_hash y borra la propiedad password
                 data.password_hash = await hashPassword(data.password);
                 delete data.password;
             }

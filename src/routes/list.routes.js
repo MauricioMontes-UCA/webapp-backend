@@ -2,18 +2,16 @@ import { Router } from "express";
 import { readingListController } from "../controllers/list.controller.js";
 import { authenticateToken } from "../middlewares/middlewares.js";
 
-const router = Router();
+export const readingListRouter = Router();
 
 //lista del usuario autenticado
-router.get("/user/me", authenticateToken, readingListController.getListsByUser);
+readingListRouter.get("/user/me", authenticateToken, readingListController.getListsByUser);
 
 //libros de una lista
-router.get("/:listId/books", authenticateToken, readingListController.getBooksInList);
+readingListRouter.get("/:listId/books", authenticateToken, readingListController.getBooksInList);
 
 //agregar libro a una lista
-router.post("/:listId/books", authenticateToken, readingListController.addBookToList);
+readingListRouter.post("/:listId/books", authenticateToken, readingListController.addBookToList);
 
 // quitar libro
-router.delete("/:listId/books", authenticateToken, readingListController.removeBookFromList);
-
-export default router;
+readingListRouter.delete("/:listId/books", authenticateToken, readingListController.removeBookFromList);

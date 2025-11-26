@@ -2,12 +2,10 @@ import { Router } from "express";
 import { libraryController } from "../controllers/library.controller.js";
 import { authenticateToken } from "../middlewares/middlewares.js";
 
-const router = Router();
+export const libraryRouter = Router();
 
 // estadísticas del usuario autenticado
-router.get("/stats", authenticateToken, libraryController.getStats);
+libraryRouter.get("/stats", authenticateToken, libraryController.getStats);
 
 // libros por categoría del usuario autenticado
-router.get("/:category", authenticateToken, libraryController.getBooksByCategory);
-
-export default router;
+libraryRouter.get("/:category", authenticateToken, libraryController.getBooksByCategory);

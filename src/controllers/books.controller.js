@@ -65,15 +65,8 @@ class BooksController {
     // }
     async searchBooksAdvanced(req, res) {
         try {
-            // TODO: En el frontend, validar que no se pueda hacer una búsqueda vacía
-
             const params = req.body;
             const queryParams = [];
-
-            if (Object.keys(params).length === 0) {
-                res.status(400).json({ error: "No hay parámetros ingresados para la búsqueda. "})
-                return;
-            }
 
             if (params.keywords) queryParams.push(params.keywords);
             if (params.title) queryParams.push(`intitle:${params.title}`);
@@ -105,10 +98,6 @@ class BooksController {
         const query = req.params.query;
 
         try {
-            if (!query) {
-                res.status(400).json({ error: "No se ha ingresado un query para la búsqueda. "})
-            }
-
             const bookList = await booksService.getBooksByQuery(query); 
 
             res.status(200).json({ items: bookList });
