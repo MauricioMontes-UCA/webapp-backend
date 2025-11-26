@@ -14,9 +14,27 @@ class ListRepository {
     // en que estas son borradas es cuando se borra un usuario. Esto es manejado
     // con una asociación en associations.js
 
+    async selectListByUserAndCategory(userId, categoryId) {
+        const list = await ReadingList.findOne({ where: {
+            user_id: userId,
+            id_category: categoryId
+        }})
+        return list ? list.get({ plain: true }) : null;
+    }
+
     async addBook(data) {
         const book = await ReadingListBook.create(data);
-        return book ? list.get({ plain: true }) : null;
+        return book ? book.get({ plain: true }) : null;
+    }
+
+    async getBookById(id) {
+        const book = await ReadingListBook.findOne({ where: {id} })
+        return book ? book.get({ plain: true }) : null;
+    }
+
+    async updateBook(id, newData) {
+        const databaseResponse = await ReadingListBook.update(newData, { where: {id} });
+        return databaseResponse;
     }
 
     async removeBook(id) {
@@ -24,11 +42,11 @@ class ListRepository {
         return databaseResponse;
     }
     
-    async selectReadingList(userId, categoryID) {
+    async selectReadingList(userId, categoryId) {
         const readingList = await findAll({
             where: {
                 user_id: userId,
-                id_category: categoryID
+                id_category: categoryId
             },
             include: [{
                 ReadingListBook
@@ -38,3 +56,5 @@ class ListRepository {
         return readingList;
     }
 }
+
+export const listRepository = new ListRepository();
