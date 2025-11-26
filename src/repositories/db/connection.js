@@ -24,6 +24,7 @@ export async function getConnection() {
     try {
         await sequelize.authenticate();
         console.log("Conexión exitosa con la base de datos.");
+        await sequelize.sync()
         return sequelize;
     }
     catch (err) {

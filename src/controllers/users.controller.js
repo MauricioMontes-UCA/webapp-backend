@@ -18,13 +18,13 @@ class UserController {
             res.status(201).json(user)
         }
         catch (err) {
-            console.error("Error en el controlador", err.message);
+            console.error("Error en el controlador: " + err.message);
 
             const status = err.status || 500;
 
             res.status(status).json({
-                message: err.message || "Error interno del servidor",
-                code: status
+                code: status,
+                message: err.message || "Error interno del servidor"
             });
         }
     }
@@ -40,13 +40,13 @@ class UserController {
             res.status(200).json(user);
         }
         catch (err) {
-            console.error("Error en el controlador", err.message);
+            console.error("Error en el controlador: " + err.message);
 
             const status = err.status || 500;
 
             res.status(status).json({
-                message: err.message || "Error interno del servidor",
-                code: status
+                code: status,
+                message: err.message || "Error interno del servidor"
             });
         }
     }
@@ -63,13 +63,13 @@ class UserController {
             res.status(200).json(user);
         }
         catch (err) {
-            console.error("Error en el controlador", err.message);
+            console.error("Error en el controlador: " + err.message);
 
             const status = err.status || 500;
 
             res.status(status).json({
-                message: err.message || "Error interno del servidor",
-                code: status
+                code: status,
+                message: err.message || "Error interno del servidor"
             })
         }
     }
@@ -92,13 +92,13 @@ class UserController {
             res.status(200).json(users);
         }
         catch (err) {
-            console.error("Error en el controlador", err.message);
+            console.error("Error en el controlador: " + err.message);
 
             const status = err.status || 500;
 
             res.status(status).json({
-                message: err.message || "Error interno del servidor",
-                code: status
+                code: status,
+                message: err.message || "Error interno del servidor"
             });
         }
     }
@@ -125,13 +125,13 @@ class UserController {
             res.status(200).json(newUser)
         }
         catch (err) {
-            console.error("Error en el controlador", err.message);
+            console.error("Error en el controlador" + err.message);
 
             const status = err.status || 500;
 
             res.status(status).json({
-                message: err.message || "Error interno del servidor",
-                code: status
+                code: status,
+                message: err.message || "Error interno del servidor"
             })
         }
     }
@@ -154,11 +154,11 @@ class UserController {
             console.info("Usuario eliminado correctamente");
             res.status(200).json(result);
         } catch (err) {
-            console.error("Error en el controlador", err.message);
+            console.error("Error en el controlador: " + err.message);
             const status = err.status || 500;
             res.status(status).json({
-                message: err.message || "Error interno del servidor",
-                code: status
+                code: status,
+                message: err.message || "Error interno del servidor"
             });
         }
     }
