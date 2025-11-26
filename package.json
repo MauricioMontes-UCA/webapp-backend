@@ -1,13 +1,21 @@
 {
   "dependencies": {
+    "axios": "^1.13.1",
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
     "dotenv": "^17.2.3",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "express-validator": "^7.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "mssql": "^12.1.0",
+    "sequelize": "^6.37.7"
   },
   "name": "repo-backend",
   "version": "1.0.0",
   "description": "Backend para el proyecto de programación web.",
   "main": "app.js",
-  "devDependencies": {},
+  "type": "module",
   "scripts": {
     "test": "npm run dev"
   },
@@ -20,7 +28,9 @@
     "auth",
     "rating"
   ],
-  "author": "Mauricio Montes",
+  "authors": [
+    "Mauricio Montes"
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MauricioMontes-UCA/webapp-backend/issues"
