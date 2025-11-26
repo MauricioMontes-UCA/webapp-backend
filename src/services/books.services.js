@@ -35,7 +35,7 @@ class BooksService {
                 }
 
                 // Es problema de la API de Google Books, y en este caso, nuestra también para el usuario
-                const errorMessage = `Error de la API de Google Books.\nCódigo: ${status}.\nMensaje: ${axiosErrorMessage}`;
+                const errorMessage = `Error de la API de Google Books: ${axiosErrorMessage}`;
                 throw new ErrorAPI(errorMessage, status);
             }
             else if (err.request) {
@@ -75,7 +75,7 @@ class BooksService {
                 }
 
                 // Es problema de la API de Google Books, y en este caso, nuestra también para el usuario
-                const errorMessage = `Error de la API de Google Books.\nCódigo: ${status}.\nMensaje: ${axiosErrorMessage}`;
+                const errorMessage = `Error de la API de Google Books: ${axiosErrorMessage}`;
                 throw new ErrorAPI(errorMessage, status);
             }
             else if (err.request) {
@@ -107,7 +107,7 @@ class BooksService {
                     throw new ErrorAPI(errorMessage, status);
                 }
 
-                const errorMessage = `Error de la API de Google Books. \nCódigo: ${status}.\nMensaje: ${axiosErrorMessage}`;
+                const errorMessage = `Error de la API de Google Books: ${axiosErrorMessage}`;
                 throw new ErrorAPI(errorMessage, status);
             }
             else if (err.request) {
