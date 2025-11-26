@@ -3,7 +3,7 @@ import { DataTypes } from "sequelize";
 
 // Es un mapeo uno a uno de la tabla de usuarios
 export const User = sequelize.define(
-    'User',
+    'user',
     {
         // Columnas de la tabla
         id: {
@@ -42,6 +42,6 @@ export const User = sequelize.define(
     {
         // Opciones del modelo
         tableName: 'users',
-        timestamps:false
+        timestamps: false
     }
 );

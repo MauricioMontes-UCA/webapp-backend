@@ -4,6 +4,10 @@ import { authenticateToken } from "../middlewares/middlewares.js";
 
 export const libraryRouter = Router();
 
+// retorna las listas de lectura del usuario
+libraryRouter.get("/me")
+
+
 // estadísticas del usuario autenticado
 libraryRouter.get("/stats", authenticateToken, libraryController.getStats);
 

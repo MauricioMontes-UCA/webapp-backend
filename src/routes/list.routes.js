@@ -4,6 +4,9 @@ import { authenticateToken } from "../middlewares/middlewares.js";
 
 export const readingListRouter = Router();
 
+
+
+
 //lista del usuario autenticado
 readingListRouter.get("/user/me", authenticateToken, readingListController.getListsByUser);
 
