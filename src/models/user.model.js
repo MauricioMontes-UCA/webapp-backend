@@ -1,5 +1,6 @@
-import { sequelize } from "../repositories/db/connection.js";
 import { DataTypes } from "sequelize";
+import { sequelize } from "../repositories/db/connection.js";
+import { List } from "./list.model.js";
 
 // Es un mapeo uno a uno de la tabla de usuarios
 export const User = sequelize.define(
@@ -45,3 +46,12 @@ export const User = sequelize.define(
         timestamps: false
     }
 );
+
+List.belongsTo(User, {
+    foreignKey: 'user_id',
+    onDelete: 'CASCADE'
+})
+
+User.hasMany(List, {
+    foreignKey: "user_id"
+})

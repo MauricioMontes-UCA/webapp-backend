@@ -20,7 +20,7 @@ class AuthController {
             res.status(200).json(user);
         } 
         catch (err) {
-            console.error("Error en el controlador de autenticación", err.message);
+            console.error("Error en el controlador de autenticación: " + err.message);
 
             const status = err.status || 500;
 
@@ -29,6 +29,32 @@ class AuthController {
                 code: status
             });       
         }
+    }
+
+    async isAuthenticated(req, res) {
+        const id = req.user.id;
+        
+        try {
+            return res.status(200).json({
+                isAuthenticated: true,
+                user: {
+                    id: req.user.id,
+                    username: req.user.username,
+                    email: req.user.email
+                }
+            })
+        }
+        catch (err) {
+            console.error("Error en el controlador de autenticación: " +  err.message);
+
+            const status = err.status || 500;
+
+            res.status(status).json({
+                message: err.message || "Error interno del servidor",
+                code: status
+            });     
+        }
+
     }
 
     // Cierra la sesión del usuario eliminando la cookie de autenticación
@@ -45,7 +71,7 @@ class AuthController {
                 message: "Sesión cerrada exitosamente"
             });
         } catch (err) {
-            console.error("Error al cerrar sesión", err.message);
+            console.error("Error al cerrar sesión: " + err.message);
             res.status(500).json({
                 message: "Error al cerrar sesión",
                 code: 500

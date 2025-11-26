@@ -3,6 +3,8 @@ import { userRepository } from "../repositories/user.repository.js";
 import { hashPassword } from "../utils/users.utils.js";
 import { ServiceError } from "./service.error.js";
 import { generateToken } from "../utils/auth.utils.js";
+import { listRepository } from "../repositories/list.repository.js";
+import { listService } from "./lists.services.js";
 
 class UserService {
     async registerUser(userData) {
@@ -18,6 +20,9 @@ class UserService {
             // Crea el nuevo usuario
             const newUser = await userRepository.createUser(data);
             delete newUser.password_hash;
+
+            // Crea y enlaza listas de lectura con el usuario
+            await listService.createUserLibrary(newUser.id)
 
             return {
                 // Genera un token de inicio de sesión 
