@@ -8,10 +8,14 @@ import router from "./src/router.js"
 dotenv.config()
 
 const PORT = process.env.PORT
+const CLIENT_URL = process.env.CLIENT_URL
 
 const app = express()
 
-app.use(cors())
+app.use(cors({
+    origin: CLIENT_URL,
+    credentials: true
+}))
 app.use(express.json())
 app.use(cookieParser()) // Necesario para leer cookies
 app.use("/api", router)

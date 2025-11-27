@@ -6,7 +6,7 @@ import { param, body, validationResult } from "express-validator";
  */
 export const validateSearchQuery = [
     param("query")
-        .isEmpty()
+        .notEmpty()
         .trim()
         .isLength({ min: 1 }).withMessage("No se ingresado un término para la búsqueda"),
 
